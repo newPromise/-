@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>技术官网</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            width: 1349px;
+        }
+        .header{
+            height: 56px;
+            width:100%;
+
+            background-color: #ffffff;
+            border: 1px solid black;
+            position: relative;
+
+            line-height: 56px;
+            position: absolute;
+            display: block;
+        }
+        .header span{
+            top: 0;
+            left: 120px;
+            font-family: 黑体;
+            font-size:22px;
+        }
+        .header img{
+            margin-left: 80px;
+        }
+        .header ul {
+            list-style-type: none;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .header li {
+            display: inline;
+            margin: 16px;
+            font-family: "microsoft yahei";
+            color: darkgray;
+            cursor: pointer;
+            padding: 15px;
+        }
+       .header li:first-child{
+           color: brown;
+           border-bottom: 6px  solid #f74747;
+
+       }
+        .header li:last-child{
+            color: #ff3300;
+        }
+        .section1 img{
+            width: 100%;
+            height: 800px;
+            position: relative;
+            top:56px;
+        }
+        .section1 p {
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            color: #ffffff;
+            font-size: 22px;
+            font-family: "microsoft yahei";
+        }
+        .section1 p>span {
+            font-size: 50px;
+        }
+        .section1 input{
+            position: absolute;
+            top: 550px;
+            left: 100px;
+            width: 250px;
+            height: 50px;
+            font-size:25px ;
+            color: #ffffff;
+            background-color: #f74747;
+            border: 0;
+            cursor: pointer;
+        }
+        .section2 {
+            width: 100%;
+            height: 300px;
+        }
+        .section2 ul{
+            position: relative;
+            top: 75px;
+
+
+            list-style-type: none;
+        }
+        .section2 li{
+            position: absolute;
+            width: 25%;
+            text-align: center;
+
+        }
+        .section2 li:first-child{
+            left: 0;
+        }
+        .section2 li:last-child{
+            right: 0;
+        }
+        .section2 li:nth-child(2){
+            left: 25%;
+        }
+        .section2 li:nth-child(3){
+            left: 50%;
+        }
+        .section2 img{
+            text-align: center;
+            vertical-align: middle;
+            display: block;
+            margin: 30px auto;
+        }
+        .section2 span{
+            font-family: "microsoft yahei";
+            color: darkgray;
+            display: block;
+            border-right: 2px solid gray;
+        }
+        .section3{
+            width: 100%;
+            height: 300px;
+            background-color: #d3d3d3;
+            text-align: center;<!--为什么，对于p块状元素也有居中的效果 -->
+        }
+
+        .section3 p {
+            padding-top: 50px;
+            color: #808080;
+            font-size: 40px;
+            font-family: "microsoft yahei";
+        }
+        .section4{
+            height: 341px;
+            width: 100%;
+
+            position: relative;
+
+        }
+        .section4 img{
+            width: 100%;
+        }
+        .first {
+            position: absolute;
+            top: 50px;
+            padding: 20px;
+            margin: 0;
+            width: 50%;
+            left: 25%;
+            right: 25%;
+            text-align: center;
+            color: #ffffff;
+            font-size: 30px;
+            font-family: "microsoft yahei";
+            margin: -40px;
+        }
+        .first span{
+           line: 2px solid #ffffff;
+        }
+        .second{
+            position: absolute;
+            top: 100px;
+            text-align: center;
+            width: 50%;
+            left: 25%;
+            right: 25%;
+            color: #ffffff;
+            font-family: "microsoft yahei";
+
+        }
+        .choice{
+            position: absolute;
+            top: 200px;
+
+            width:100%;
+            height: 35px;
+            color:#d3d3d3;
+            font-size: 20px;
+            font-family: "microsoft yahei";
+            display: inline;
+            text-align: center;
+        }
+
+        .section4 select{
+
+            width: 230px;
+            height: 35px;
+            color:#d3d3d3;
+            font-size: 20px;
+            font-family: "microsoft yahei";
+            margin: 15px;
+            background: url("red-arrow.png") no-repeat  #ffffff scroll right center ;
+            padding-right: 14px;
+
+
+
+        }
+        .section4 option{
+            color:dimgray;
+            background-color:#c0c0c0;
+        }
+
+
+        .section4 option{
+            color:dimgray;
+            background-color:#c0c0c0;
+        }
+        .section4 input{
+            width: 230px;
+            height: 35px;
+            background-color: #a5403b;
+            color: #ffffff;
+            margin: 15px;
+            text-align: center;
+            border: 0;
+            cursor: pointer;
+        }
+        .section5 {
+            width: 100%;
+            height: 500px;
+            background-color: #a9a9a9;
+
+
+        }
+        .activity{
+            width: 1160px;
+            height: 400px;
+            position: relative;
+            margin: 0 auto;
+
+        }
+        .activity  p{
+            color: #c0c0c0;
+            font-size: small;
+            font-family: "microsoft yahei";
+
+        }
+        .activity  span{
+            font-size: 15px;
+            color: #ffffff;
+            font-family: "microsoft yahei";
+        }
+        .bjactive{
+            width: 250px;
+            position: absolute;
+            left: 0;
+            top: 100px;
+            text-align: center;
+          }
+
+
+
+       .shactive{
+           position: absolute;
+           top:100px;
+           left: 25%;
+           width: 250px;
+           text-align: center;
+
+       }
+        .szactive{
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            width: 250px;
+            text-align: center;
+        }
+        .hkactive{
+            position: absolute;
+            top: 100px;
+            left: 75%;
+            width: 250px;
+
+        }
+        .section6{
+            width: 70%;
+            height: 550px;
+            position: relative;
+
+        }
+        .section6 p{
+            position: absolute;
+            top: 100px;
+            margin: 0 auto;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            color: #ffffff;
+            font-family: "microsoft yahei";
+
+        }
+        .section6 p>span{
+            font-size: 30px;
+        }
+        .section6 p>span>span{
+            font-size: 100px;
+        }
+        .deta{
+            width: 0;
+            height: 0;
+            border-bottom: 30px solid transparent;
+            border-right: 60px solid #ffffff;
+            border-top: 30px solid transparent;
+            position: absolute;
+            top: 200px;
+            left: 84%;
+
+        }
+        .wenzi{
+            position: absolute;
+            left: 70%;
+            top: 0;
+        }
+        .section7{
+            text-align: center;
+            width: 100%;
+            height: 500px;
+            position: relative;
+
+
+        }
+        .pic1{
+            height: 100%;
+            width: 33.3%;
+            background-color:#E74F4D;
+            color: #ffffff;
+            text-align: center;
+
+        }
+        .section7 p{
+           padding-top: 120px;
+            top: 100px;
+            font-size: 20px;
+            font-family: "microsoft yahei";
+            margin: 0  auto;
+        }
+        .section7 input{
+            width: 200px;
+            height: 40px;
+            background-color:transparent;
+            color: #ffffff;
+            margin-top: 100px;
+            border: 1px solid  #ffffff;
+            font-size: 20px;
+
+        }
+        .pic2{
+            position: absolute;
+            width: 33.3%;
+            left: 33.3%;
+            height:100% ;
+            background-color: #edeeec;
+            top: 0;
+        }
+        .pic3{
+            position: absolute;
+            top: 0;
+            left: 66.6%;
+            width: 33.6%;
+            height: 100%;
+        }
+        .trip{
+            width: 0;
+            height: 0;
+            border-left: 60px  solid  #ffffff;
+            border-top: 30px  solid   transparent;
+            border-bottom: 30px solid  transparent;
+            position: absolute;
+            top: 200px;<!--zhongyaocdsgbdbfdnghc rdfbffbfgcbgffg  -->
+
+
+        }
+
+        .pic3 img{
+            width: 100%;
+            height: 100%;
+        }
+        .section8{
+            width: 100%;
+            height: 300px;
+            text-align: center;
+            font-family: "microsoft yahei";
+        }
+       .section8 p {
+           color: #d3d3d3;
+           font-family: "microsoft yahei";
+           margin-top: 100px;
+       }
+        .section8 hr{
+            height: 4px;
+            width: 58px;
+            background-color:#d62219;
+            border: 0;
+        }
+        .section8 h1{
+            margin-bottom: 0;
+            margin-top: 100px;
+        }
+        .section9{
+            width: 100%;
+            heght:auto;
+
+        }
+        .form{
+            float: right;
+            text-align: center;
+            margin-bottom: 40px;
+
+        }
+        .section9 input{
+
+            margin: 10px;
+            width: 250px;
+            height: 40px;
+            
+            background-color: #d3d3d3;
+            border: 0;
+        }
+       input[type="submit 5"]{
+           width: 540px;
+           height: 100px;
+
+       }
+       .section9 button{
+           width:540px;
+           height: 40px;
+           background-color: #d3d3d3;
+           border: 0;
+       }
+        .agreemet p{
+            margin: 40px;
+            color: #c0c0c0;
+            font-size: 15px;
+            font-family: "microsoft yahei";
+
+        }
+        .agreemet span{
+            color: #808080;
+            font-size: 20px;
+            margin: 20px;
+            display: block;
+        }
+        .footer{
+            background: #32353E;
+            color: #ffffff;
+            width: 100%;
+            height: 500px;
+            text-align: center;
+            font-family: "microsoft yahei";
+            position: relative;
+        }
+        .footer p{
+            font-size: 15px;
+            margin-top: 80px;
+            padding-top: 80px;
+            ;
+
+        }
+        .footer span{
+            font-size: 20px;
+        }
+        .footer input{
+            height: 40px;
+            width: 500px;
+            color: #d3d3d3;
+
+        }
+        .footer button{
+            height: 47px;
+            width: 100px;
+            background: #a5143f;
+            color: #ffffff;
+            font-family: "microsoft yahei";
+            font-size: 20px;
+            border: 0;
+            cursor: pointer;
+        }
+      .footer  form {
+          display: inline-flex;
+          margin: 20px;
+
+      }
+        .footer ul{
+           display: block;
+            list-style-type: none;
+        }
+        .footer li{
+            margin: 20px;
+            display: inline;
+        }
+        .last{
+            position: absolute;
+            width: 100%;
+            height: 50px;
+            color: #ffffff;
+            background-color:#2F3038 ;
+            bottom: 0;
+        }
+        .last span{
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div>
+    <div class="header">
+        <img src="header_1.jpg">
+        <span><b>新世界</b></span>
+        <ul>
+            <li>首页</li>
+            <li>最新活动</li>
+            <li>项目介绍</li>
+            <li>爱心社区</li>
+            <li>关于我们</li>
+            <li>登录</li>
+        </ul>
+    </div>
+    <div class="section1">
+        <img src="section_1.jpg">
+        <p><span>Time of new life</span> <br>新时代，年轻的人们让我们一起<br>体验新生活，享受新生活</p>
+        <a href="http://www.w3school.com.cn/tiy/t.asp?f=html_input_button"> <input type="button"   value="开始体验"><a>
+    </div>
+    <div class="section2">
+        <ul>
+            <li><img src="circle.png"><span>打造全新世界观，让你更<br>爱你的生活</span> </li>
+            <li><img src="flag.png"><span>丰富多彩的公益活动，发<br>挥新世界的主人公意识</span></li>
+            <li><img src="flower.png"><span>时尚的新理念，超前体验<br>未知的生活</span></li>
+            <li><img src="square.png"><span>完善的培养机制，培养你<br>全新的世界观</span> </li>
+        </ul>
+    </div>
+    <div class="section3">
+
+        <p><img src="new.png"><br><br><span>关于新世界，你不知道的还有什么?</span></p>
+
+    </div>
+    <div class="section4">
+        <img src="map.jpg">
+        <p class="first">查找新世界<span>城</span>市活动信息</p>
+        <p class="second">每个城市有不同的活动信息，请自主查询您所需要了解的城市</p>
+        <div class="choice">
+            <select name="nation" >
+                <option  value="china" >中国</option>
+                <option  value="usa">美国</option>
+                 <option value="japan">日本</option>
+                 <option value="frence">法国</option>
+            </select>
+            <select name="shengfen">
+                <option>河北</option>
+                <option>山东</option>
+                <option>河南</option>
+            </select>
+            <select name="city">
+                <option>北京</option>
+                <option>南京</option>
+                <option>上海</option>
+                <option>济南</option>
+            </select>
+            <input type="button" name="搜索" value="搜      索">
+        </div>
+    </div>
+    <div class="section5">
+        <div class="activity">
+
+            <div class="bjactive">
+                <img src="pic_14.jpg">
+                <p><span>北京活动</span><br>新社区大联盟</p>
+
+            </div>
+            <div class="shactive">
+                <p><span style="width: 100%">上海活动</span><br>夜上海景观探索</p>
+                <img src="pic_20.jpg">
+            </div>
+            <div class="szactive">
+
+                <img src="pic_14.jpg">
+                <p><span>深圳活动</span><br>全新海岸线观点站</p>
+
+            </div>
+            <div class="hkactive">
+                <img src="pic_11.jpg">
+                <p><span>香港活动</span><br>奢侈消费品大派送</p>
+            </div>
+         </div>
+    </div>
+    <div class="section6">
+        <img src="middle-left.jpg">
+        <p><span>新世界<br><span>TIME</span></span><br>@新世界-北京<br>2016.04.01</p>
+        <div class="deta"></div>
+        <div class="wenzi">
+            <h2>新世界/<span>01</span></h2>
+            <p>新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界</p>
+            <input type="button" value="更多详情">
+            <img src="point.png">
+        </div>
+    </div>
+    <div class="section7">
+        <div class="pic1">
+            <p>新时代<br>关于爱生活的我们</p>
+            <a  href="#"> <input type="button" value="查看更多"></a>
+        </div>
+        <div class="pic2">
+            <p>新时代<br>关于爱生活的我们</p>
+            <a href="#"><input type="button" value="查看更多"></a>
+
+        </div>
+       <!--有问题  -->
+        <div class="pic3">
+            <img src="train.png">
+            <div class="trip"></div>
+        </div>
+    </div>
+    <div class="section8">
+        <h1>成为我们的志愿者</h1>
+        <hr>
+
+        <p>新世界的大家庭需要每一个爱生活的人加入，如果你够年轻，有梦想，有激情<br>那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+    </div>
+    <div class="section9">
+
+        <div class="form">
+            <input type="submit 1 "  value="姓名：" class="name">
+            <input type="submit 2" value="年龄:" class="age"><br>
+            <input type="submit 3" value="联系方式:">
+            <input type="submit 4" value="联系地址:"><br>
+            <input type="submit 5" value="请简单描述您梦想的生活:" ><br>
+            <button type="button">提交</button>
+        </div>
+
+        <div class="agreemet">
+
+            <p><span>新世界志愿者协议</span><br>&nbsp加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并且本着平等资源的原则</p>
+
+            <p><span>新世界志愿者权利</span><br>新世界志愿者享受新世界内部所有资源共享的权利，并且享受所在地新世界活动的优先参与资格</p>
+            <p>更多条款</p>
+
+        </div>
+    </div>
+    <div class="footer">
+        <p><span>联系我们</span><br>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<br>也可以通过以下任何方式关注我们动态</p>
+        <form>
+
+                <input type="email" name="email"  value="someone's email">
+                <button>提交</button>
+        </form>
+        <ul>
+            <li> <img  src="qq.png"></li>
+            <li> <img src="twitter.png"></li>
+            <li>  <img src="l2.png"></li>
+            <li><img src="l4.png"></li>
+        </ul>
+        <div class="last"><span>@2016新世界</span></div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
