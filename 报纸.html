@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///D:/000/%E4%BB%A3%E7%A0%81/%E6%8A%A5%E7%BA%B8.html -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>报纸</title>
+    <style>
+        div.content{
+            height: 1386px;
+            width: 980px;
+            border: 1px solid gray;
+            padding-top: 0;
+
+
+        }
+        .header{
+            width: 892px;
+            height: 61px;
+            border: 2px solid #938e8c;
+            border-style:none none solid  none;
+            margin: 0 auto;
+            margin-bottom: 20px;
+
+        }
+        .header>p{
+            text-align: right;
+            margin: 0;
+            margin-top: 45px;
+            width: 100px;
+            float: right;
+        }
+        .h1{
+            width:110px ;
+            height: 61px;
+            color: white;<!--有问题 -->
+            background-color: darkred;
+            margin-right: 0;
+            margin-top: 0;
+            position: relative;
+        }
+        .h1>p{
+            margin: 0;
+            font-size: 12px;
+            position: absolute;
+            bottom: 3px;
+            left: 6px;
+            font-family: 黑体;
+        }
+        .part1{
+            width: 892px;
+            height: 301px;
+            margin: 0 auto;
+
+        }
+        .letter{
+            float: right;
+            width: 203px;
+            height: 301px;
+            padding: 0;
+
+            border: 2px  solid hotpink;
+            border-style: solid none;
+            border-bottom-style: none;
+            margin: 0;
+            margin-right: 0;
+            text-align: left;
+        }
+        .pic {
+            width: 641px;
+            height: 301px;
+            border: 1px solid #000000;
+            position: relative;
+        }
+        .pic>img{
+            width: 100%;
+            height: 100%;
+        }
+        .left{
+            width: 191px;
+            height: 301px;
+            border: 1px solid #000000;
+            position: absolute;
+            top: 0px;
+            background-color: green;
+            opacity:0.3;
+
+        }
+        .right{
+            width: 191px;
+            height: 301px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            background-color: #ffaeac;
+            opacity: 0.3;
+
+        }
+        .f2{
+            font-size: 12px;
+            margin: 0;
+            color: #676767;
+            font-family:楷体 ;
+
+        }
+        .fl{
+            font-size: 24px;
+            color: #000000;
+            text-decoration: underline;
+            font-family: microsoft yahei;
+            margin: 0;
+
+        }
+        .number1{
+            font-size: 116px;
+            font-style: italic;
+            font-family: microsoft yahei;
+            color: #75b86b;
+
+            margin: 0;
+
+        }
+        .s1 span{
+            display: inline-block;
+            width: 80px;
+        }
+        .s1{
+            color: #cc8091;
+            font-size: 55px;
+            margin: 0;
+        }
+        .s1>span{
+            font-size: 21px;
+
+            line-height: 10px;
+        }
+        .s1>span>span{
+            font-size: 12px;
+            font-family: "Microsoft YaHei";
+            color: #999999;
+        }
+        .part2{
+            width: 641px;
+            height: 202px;
+
+            margin-left: 44px;
+            margin-top: 20px;
+
+
+
+        }
+
+        .how{
+            height: auto;
+            width: 200px;
+            margin: 0 0 0 20px;
+            float: right;
+
+            font-size: 12px;
+            font-family: microsoft YaHei;
+
+        }
+        .how p{opacity: 0.3}
+        .how>span{
+            font-size: 16px;
+            color: #cc7680;
+            text-decoration: underline;
+
+        }
+        .how>p>span{
+            color: #cd4a48;
+            font-style: italic;
+
+        }
+
+
+        .when{
+            width: 200px;
+            height: auto;
+            margin:0 0 0 20px;
+            float: right;
+
+            font-size: 12px;
+
+        }
+        .when>span{
+            color: #d2994f;
+            font-size: 16px;
+            text-decoration: underline;
+            font-family: microsoft YaHei;
+        }
+        .when p{opacity: 0.3}
+        .what{
+            width: 241px;
+            height: auto;
+            color: #767777;
+            margin: 0;
+            font-size: 12px;
+            font-family: 宋体；
+
+        }
+        .what>span{
+            color: #418c59 ;
+            font-size: 16px;
+            text-decoration: underline;
+            font-family: microsoft YaHei;
+
+        }
+        .part3{
+            width: 458px;
+            height: auto;
+
+            float: right;
+            margin: 20px 44px 0 20px;
+        }
+        .part3pic {
+            width: 100%;
+            height: 275px;
+            position: relative;
+        }
+        .part3pic img{width: 100%  ;
+                      height: 100%;
+        }
+        .cov{
+            width: 100%;
+            height: 61px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #000000;
+            opacity: 0.6;
+            color: white;
+
+        }
+        .cov p{
+            margin:  10px  40px;
+            border-left:3px solid #72b16a ;
+            width: auto;
+            height: 44px;
+            font-size: 26px;
+            color: #ffffff;
+            font-family: microsoft yahei;
+        }
+        .cov span{
+            font-size: 12px;
+            color: #72b16a;
+            font-style: italic;
+            font-family: microsoft yahei;
+            word-spacing: 140%;
+
+        }
+        .p3a ul{
+            list-style-type:&Delta;
+            font-size: 16px;
+            font-family: 宋体;
+
+        }
+        .p3a span{
+            font-size: 12px;
+            color: #5a5b5b;
+            font-family: 宋体;
+            font-style: italic;
+        }
+        .p3a{
+            margin-top: 20px;
+            background-color: #f4ddc2;
+            width: 459px;
+            height: 318px;
+            color: #5a5b5b;
+
+        }
+        .p3b{
+            width: 459px;
+            height: 160px;
+            margin: 0;
+
+        }
+        .p3b1{
+            float:  right;
+            width: 178px;
+            height: 169px;
+            font-size: 14px;
+            color: #5a5b5b;
+            font-style: italic;
+        }
+        .p3b2{
+            height: 160px;
+            width: 260px;
+            background-color: brown;
+            color: #ffffff;
+            display: inline-flex;
+        }
+        .p3b2 span{
+
+            margin: auto 10px;
+            padding: 10px;
+            height: 86px;
+            border-left: 2px solid  #ffffff;
+            font-size: 12px;
+
+            font-family:黑体 ;
+            text-align: left;
+
+        }
+        .p3b2>span>span{
+            font-size: 21px;
+            color: #ffffff;
+            font-style: italic;
+            border: 0;
+
+        }
+        .p3b2>div{
+            font-size: 110px;
+            font-family: microsoft yahei;
+            font-style: normal;
+        }
+        .part4{
+
+            padding: 20px;
+            padding-left: 44px;
+        }
+        .part4top{
+            width: 390px;
+            height: 160px;
+            padding: 10px;
+            border-bottom: 2px solid #11456b;
+
+
+        }
+        .part4top p> span{
+            color: #f5e327;
+            font-size: 72px;
+            font-style: italic;
+            font-family: 黑体;
+
+        }
+        .part4top p{
+            font-size: 42px;
+            color: #11456b;
+            margin: 0  auto;
+            font-family: 黑体;
+
+        }
+        .part4top>span{
+            font-size: 33px;
+            font-family: 黑体;
+            color: #11456b;
+
+        }
+        .part4botom img{
+            width: 100px;
+            height: 200px;
+            float: right;
+            margin: 10px;
+
+        }
+        .part4botom  span{
+            font-size: 70px;
+            color: #f5e327;
+            float: left;
+            font-family: 微软雅黑;
+        }
+        .part4botom{
+            font-size: 12px;
+            color: #767777;
+            font-family: 宋体;
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="header">
+        <p><span>2016.03</span></p>
+        <div class="h1">
+           <p><span> ife.baidu.com</span></p>
+        </div>
+    </div>
+    <div class="part1">
+        <div class="letter">
+            <p class="fl">ABOUT<br><span>TECHNOLOGE</span></p>
+            <p class="f2"> About&nbsp;technologe&nbsp;about  technologe<br>about&nbsp;technologe</p>
+            <p class="number1">700</p>
+            <p class="s1">3.2<span>css <span>csscsscsscsscss</span></span></p>
+        </div>
+        <div class="pic">
+            <img src="./报纸_files/200209199560.jpg">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <div class="part2">
+        <div class="how">
+            <span><b>How</b></span>
+            <p>前端前端前端前端</p><p>前端前端前端前端</p>
+            <p>前端前端前端</p>
+            <p>What-------<span>40%</span></p>
+            <p>When-------<span>30%</span></p>
+            <p>How--------<span>30%</span></p>
+        </div>
+        <div class="when">
+            <span><b>When</b></span>
+            <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端
+                前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+        </div>
+        <div class="what">
+            <span><b>What</b></span>
+            <p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前
+                前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+        </div>
+    </div>
+    <div class="part3">
+        <div class="part3pic">
+            <img src="./报纸_files/u=1272548632,278957131&amp;fm=21&amp;gp=0.jpg">
+            <div class="cov"><p>前端技术<span>前端技术前端技术</span></p></div>
+        </div>
+        <div class="p3a">
+            <ul>
+                <li><p>前端前端前端前端前端前端.....................<span>前端</span></p></li>
+                <li><p>前端前端前端.................................<span>前端</span></p></li>
+                <li><p>前端前端.....................................<span>前端</span></p><p></p></li>
+            </ul>
+            <div class="p3b">
+                <div class="p3b1">
+                    <p>hello world hello world hello world hello world hello world</p>
+                </div>
+                <div class="p3b2">
+                    <div>0</div>
+                    <span><span>ONE TWO
+                                 THERE FOUR FIVE</span>hello word hello word hello word  hello word </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part4">
+        <div class="part4top">
+            <b><p><span>THE</span> THCHNOLOGE<br> OF FRONT</p>
+            <span style="color: #11456b;font-family: 黑体">前端技术领域</span></b>
+
+        </div>
+        <div class="part4botom">
+            <div>
+            <span>前</span> 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端
+            前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端
+            前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端
+            前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端  前端 前端 前端
+                 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端
+                <img src="./报纸_files/u=1667147793,2113333594&amp;fm=23&amp;gp=0.jpg">
+                 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端v
+                 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前 前端 前端 前端
+                前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端
+                前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端 前端
+             </div>
+        </div>
+    </div>
+</div>
+
+</body></html>
