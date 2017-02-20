@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .content{
+
+
+            width: auto;
+            height: 300px;
+            border: 1px  solid #000000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+
+        }
+        .first,.second,.third{
+            width: 150px;
+
+            border: 1px  solid  #f00;
+            flex-shrink: 0;
+
+        }
+        .first{height: 120px}
+        .second{height: 100px;
+
+
+        }
+        .third{height: 40px}
+        .fourth{height: 200px;
+                width: 150px;
+                border: 1px solid #0f0;
+                flex-shrink: 0;
+        }
+        @media all and (max-width: 640px) {
+            .content{
+
+
+
+
+                align-items: flex-start;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+            }
+            .first{
+                order: 2;
+            }
+            .second{
+                order: 3;
+            }
+            .third{
+                order: 4;
+            }
+
+
+            .fourth{
+                order: 1;
+            }
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+    <div class="fourth"></div>
+</div>
+
+</body>
+</html>

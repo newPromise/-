@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+    <style>
+        img{
+            width: 200px;
+            height: 300px;
+
+        }
+    </style>
+</head>
+<body>
+<p>
+<ul id="ul">
+    <li><a href="http://f.hiphotos.baidu.com/baike/w%3D268%3Bg%3D0/sign=8c7d82dbb419ebc4c078719fba1da8c1/37d12f2eb9389b50ba8e5dec8235e5dde7116e1f.jpg" title="china">china</a></li>
+    <li><a href="images/usa.jpg" onclick="showPic(this);return false;"  title="usa">usa</a></li>
+    <li><a href="images/japan.jpg" title="japan">japan</a></li>
+    <img  id="placeholder" src="images/china.jpg">
+    <p id="description">你好坏</p>
+
+
+</ul>
+</p>
+<script type="text/javascript">
+  document.getElementById("description").firstChild.nodeValue="好吗好恶毒";
+onload=prepareGallery;
+function prepareGallery(){
+
+    var  preLinks=document.getElementById("ul");
+    var link=preLinks.getElementsByTagName("a");
+    for (var i=0;i<link.length;i++)
+    {
+        link[i].onclick=function(){//遍历数组用于给每个元素添加行为
+            showPic(this);
+            return false;
+        }
+    }
+
+
+    function  showPic(whichPic) {
+        if (!document.getElementById("placeholder")) {
+            return false;
+        }
+
+        var source = whichPic.getAttribute("href");
+        var placeholder = document.getElementById("placeholder");
+        placeholder.setAttribute("src", source);
+        if (document.getElementById("description")) {//采取这么多预防措施是为了防止当id改变时，js出现错误
+            var text = whichPic.getAttribute("title");
+            var description = document.getElementById("description");
+            description.firstChild.nodeValue =text;
+        }
+        return true;
+
+
+    }
+}
+
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .container {
+            width: 70%;
+            height: 500px;
+            border: 1px solid dimgray;
+            padding: 10px;
+        }
+        .row{
+            display: flex;
+        }
+
+
+
+        body{
+            margin: 0;
+        }
+        [class*='col-'] {
+            float: left;
+
+            min-height: 1px;
+
+            /*-- our gutter -- */
+           padding: 10px;
+            margin: 10px;
+            height: 50px;
+            background-color: #edeeec;
+            border: 1px  solid #999;
+            box-sizing: border-box;
+        }
+        .col-1{
+            width: 8.33%;}
+        .col-2{width: 16.66%}
+        .col-3{width: 24.99%}
+        .col-4{width: 33.33%}
+        .col-6{width: 50%}
+        .col-62{width: 50%}
+
+        .col-22{width: 16.66%}
+        .col-32{width: 24.99% }
+
+
+        @media all and (max-width: 768px) {
+            .col-4:first-child{
+                width:calc((100% - 44px)/2)
+            }
+            .col-4:nth-child(2){
+                width:calc((100% - 44px)/2)
+            }
+            .col-4:last-child{
+                width:calc(100% - 22px)  ;
+            }
+            .col-3{
+                width: calc((100% - 66px)/4);
+            }
+            .col-32{
+                width: calc((100% - 66px)/4);
+            }
+            .col-6{
+                width: calc((100% - 66px)/2);
+            }
+
+            .col-1{
+                width:calc((100% - 66px)/6);
+
+            }
+           .col-2{
+                width:calc((100% - 66px)/1.5) ;
+
+            }
+          .col-22{
+                width: calc((100% - 66px)/4)
+            }
+            .col-62{
+                width:  calc((100% - 66px)/4)
+
+
+            }
+            .row{
+                display:block;
+            }
+
+            }
+
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6"></div>
+        <div class="col-32"></div>
+
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-22"></div>
+        <div class="col-62"></div>
+    </div>
+</div>
+
+</body>
+</html>

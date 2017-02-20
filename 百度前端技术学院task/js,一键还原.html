@@ -1,0 +1,57 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset=utf-8" />
+
+</head>
+<body>
+<div id="div1">
+    <p  id="pa">你哈啊</p>
+    <button  onclick="x()">按钮</button>
+    <button onclick="gbys()">改变颜色</button>
+    <button onclick="gbkd()">改变宽度</button>
+    <button onclick="ycnr()">隐藏内容</button>
+    <button onclick="xsnr()">显示内容</button>
+
+
+</div>
+<script   type="text/javascript">
+    var sty=document.getElementById("pa").style;
+    function  x() {
+        var y = confirm();
+
+        if (y == true) {
+        } else
+        {
+
+            document.getElementById("pa").style=0;
+        }
+    }
+    function  gbys()
+    {
+       sty.color="red";
+    }
+    function gbkd()
+    {
+       sty.height="200px";
+    }
+    function  ycnr()
+    {
+        sty.display="none";
+    }
+    function  xsnr()
+    {
+        sty.display="block";
+    }
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
