@@ -1,3 +1,5 @@
+//这个插件可以实现圆点随图片运动而发生变化，当点击圆点时，可以转到相应的图片、、？？?
+//但这个插件函数封装的不是很好，如第12行的#list 表示的是圆点列表的id  ，希望有一天用原生js实现这一功能
 var  slideshow=function(ulId,time) {
     var ul = document.getElementById(ulId);
     var list = ul.getElementsByTagName("li");
