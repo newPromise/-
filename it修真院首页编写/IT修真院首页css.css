@@ -1,0 +1,301 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 14px;
+    color: #333333;
+    font-family: Arial,"Times New Roman","Microsoft YaHei", SimSun, SimHei;
+
+
+}
+a {
+    text-decoration: none;
+}
+/*头部开始*/
+/*头部通知栏开始*/
+.header{
+    width: 100%;
+    overflow: hidden;
+}
+.header_notice, .header_content{
+    width: 1170px;
+    margin: 0  auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.contact{
+    float: left;
+    width: 41.66666667%;
+}
+.contact span{
+    line-height: 40px;
+    color:  #56a087;
+    float: left;
+}
+.notice_nav{
+    float: right;
+    padding: 0 15px;
+    position: relative;
+}
+
+
+.notice_nav a{
+    line-height: 40px;
+}
+
+.notice_nav a img{
+    margin-right: 22px;
+    margin-bottom: -7px;
+}
+.notice_nav a:nth-child(4) img{
+    margin-bottom: -5px;
+    margin-right: 17px;
+}
+/*头部通知栏结束*/
+/*头部LOGO开始*/
+.header_content_wrap{
+    background-color:#29B078 ;
+    /*要明白这个overflow的作用*/
+    overflow: hidden;
+    opacity: 0.9;
+    z-index: 1;
+}
+.logo{
+    float: left;
+    margin-top: 15px;
+}
+.content_nav{
+    float: right;
+    padding: 0 15px;
+    height: 97px;
+    z-index: 1;
+}
+.content_nav ul  img {
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    right: 400px;
+    display: none;
+
+}
+.content_nav li {
+    float: right;
+    list-style-type: none;
+    padding: 0  25px;
+    z-index: 1;
+
+}
+.content_nav ul li:first-child{
+    padding-right: 0;
+}
+.content_nav li a {
+    display: block;
+    line-height: 93px;
+    font-size: 16px;
+    color: #ffffff;
+    border-bottom: 4px;
+}
+.content_nav li a:hover{
+    border-bottom: 4px solid #ffffff;
+}
+/*头部LOGO结束*/
+/*头部结束*/
+/*轮播图部分开始*/
+
+#list  ,.slidePic ,.slidePic_wrap{
+    overflow: hidden;
+}
+.slidePic{
+    height: 422px;
+    width: 1170px;
+}
+#list{
+    width: 5396px;
+    left: 0;
+    position: absolute;
+    height: 430px;
+
+}
+
+#list li {
+    float: left;
+    list-style-type: none;
+}
+
+#list li img{
+    width: 1349px;
+}
+
+#cicle li {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    float: left;
+    list-style-type: none;
+    border: 1px solid #000000;
+}
+/*轮播部分结束*/
+/*大标签部分开始*/
+.bigTag_wrap{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.bigTag{
+    width: 1170px;
+    padding: 0  15px;
+    margin: 0  auto;
+    background-color: #ffffff;
+    overflow: hidden;
+
+}
+.bigTag li {
+    width: 25%;
+    float: left;
+    list-style-type: none;
+    padding: 40px  15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.bigTag li:last-child div{
+    border-left: 1px solid #d3d3d3;
+}
+.bigTag li:last-child div span {
+    padding-top: 5px;
+    font-size: 18px;
+    color: #26a26f;
+}
+.bigTag li h4{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bigTag li p {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+/*大标签部分结束*/
+/*课程部分开始*/
+.course_wrap{
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color:#F8F8F8;
+    height: 472px;
+}
+.course{
+    width: 1170px;
+    margin: 0  auto;
+    padding: 30px 0;
+}
+.top_line{
+    text-align: center;
+}
+.top_line >h4{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.top_line p{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -20px;
+    margin-bottom: 5px;
+    width: 25px;
+    border-top: 3px solid #00ac6f;
+}
+.top_line span{
+    text-align: center;
+    color: #999;
+    margin: 0 0 10px;
+}
+.course_decri p {
+    margin: 0  0  10px;
+}
+.course_decri, .course_decri ul {
+    overflow: hidden;
+}
+.course_decri ul {
+    display: flex;
+}
+.course_decri ul li {
+    float: left;
+    width: 33.333%;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid  #d3d3d3;
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.course_decri ul li h5 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #000000;
+}
+.course_decri ul li p {
+    color: #999999;
+
+}
+.course_decri ul li a {
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #d5d5d5;
+    color: #000000;
+    text-decoration: none;
+}
+.course_decri ul li a:hover{
+    color: #FF650E;
+    border:1px solid  #FF650E;
+}
+/*课程部分结束*/
+/*底部部分开启*/
+.footer_wrap{
+    background-color:#26A26F;
+    color:#ffffff;
+    padding: 20px 0;
+}
+.friendlinks p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.friendlinks a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.friendlinks{
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 0  auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.friendlinks .links_b  img{
+    width: 92px;
+    height: 92px;
+}
+.copyright{
+    border-top: 1px solid lightgreen;
+}
+.copyright p {
+    margin: 0  auto;
+    text-align: center;
+}
+
+
+
