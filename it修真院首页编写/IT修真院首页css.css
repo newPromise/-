@@ -12,6 +12,7 @@ body {
 }
 .container{
     overflow:hidden;
+    /*为什么这里加了一个position：relative，就不会有内容超出可视窗口了*/
     position:relative;
 
 
