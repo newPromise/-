@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet"   type="text/css" href="慕课网pagecss.css"/>
+
+    <script>
+
+        window.onload=function (){
+
+            var button=document.getElementById("button");
+            button.onmouseover=function (){
+                button.innerHTML="<span>参加该路径</span>"
+                this.style.opacity=0.5;
+            };
+            button.onmouseout=function (){
+                button.innerHTML="<span>加入学习</span>"
+                this.style.opacity=1;
+            }
+
+        }
+    </script>
+
+
+</head>
+<body>
+<!--整体宽度控制-->
+<div class="container">
+    <!--头部定义开始-->
+    <div class="header_wrap">
+        <div class="header   clearfix">
+            <div class="nav_bar">
+                <div class="logo">
+                    <a href="http://www.imooc.com/"></a>
+                </div>
+                <ul>
+                    <li><a href="http://www.imooc.com/course/list">课程</a></li>
+                    <li><a href="http://www.imooc.com/course/list">职业路径</a></li>
+                    <li> <a href="http://www.imooc.com/course/list">实战</a></li>
+                    <li><a href="http://www.imooc.com/wenda">猿问</a></li>
+                    <li><a href="http://www.imooc.com/article">手记</a></li>
+                 </ul>
+            </div>
+            <div class="sign_bar">
+                <label>
+                    <input>
+                </label>
+                <a href="http://order.imooc.com/pay/cart">购物车</a>
+                <a href="http://www.imooc.com/course/landingpagephp?from=phpkecheng#">登录</a>
+                <a href="http://www.imooc.com/course/landingpagephp?from=phpkecheng#">注册</a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--头部定义结束-->
+    <!--定义中间大图部分-->
+    <div class="mainPic_wrap">
+        <div class="mainPic">
+            <img src="images/landp_banner.jpg">
+        </div>
+    </div>
+    <!--大图部分结束-->
+    <!--加入按钮部分-->
+    <div class="join" id="join">
+        <a id="button" href="http://www.imooc.com/course/landingpagephp?from=phpkecheng#">加入学习</a>
+    </div>
+    <!--加入按钮部分结束-->
+    <!-- PHP教程-->
+    <div  class="stage_wrap">
+        <div class="first_stage">
+            <h3>第一关 PHP基础入门</h3>
+            <p>作为当今主流的开发语言，PHP集简单，免费，高效等荣誉于一身，但是，想学习他还是要脚踏实地的从基础语法开始，当然，对
+                于将来要在Web开发领域叱咤风云的你来说，跟HTML和CSS还有一些不得不说的故事。</p>
+            <div class="course">
+                <div>
+                    <a href="http://www.imooc.com/learn/54">
+                        <img src="images/53daee770001dd0706000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>PHP基础</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+                        </div>
+                        <div class="into">
+                            <p>PHP入门轻松学习，行业大牛帮您快速掌握<br>PHP编程基础知识</p>
+                            <span>21小时前</span>
+                            <span>283441人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.imooc.com/learn/26">
+                        <img src="images/572b0752000142ef06000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>PHP进阶篇</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+                        </div>
+                        <div class="into">
+                            <p>轻松学习PHP中级课程，进行全面了解<br><br></p>
+                            <span>四天前</span>
+                            <span>11223人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.imooc.com/learn/9">
+                        <img src="images/529dc3380001379906000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>HTML+CSS基础课程</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+                        </div>
+                        <div class="into">
+                            <p>HTML+CSS基础课程8小时带领大家步步深入学<br>习标签用法和意义</p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="arrow_warp">
+            <div class="arrow">
+                <img src="images/dot_program_arrow.png">
+            </div>
+        </div>
+        <div class="second_stage">
+            <h3>第二关 PHP基础应用</h3>
+            <p>web开发与数据库息息相关，接下来一起来学习MySQL数据库的基础知识，与此同时，我们还会把php的基础知识结合起来做几个
+                实用的小案例，掌握了这些知识之后，下一步小伙伴们就可以做出一个有数据交互的网站了，是不是很神奇呢？</p>
+            <div class="course">
+                <div>
+                    <a href="http://www.imooc.com/learn/94">
+                        <img src="images/572b0752000142ef06000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>Web在线文件管理器</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+
+                        </div>
+                        <div class="into">
+                            <p>教你掌握文件，目录函数库的应用<br><br></p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.imooc.com/learn/116">
+                        <img src="images/5387e32e000196cb06000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>PHP与MySQL关系大揭秘</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+
+                        </div>
+                        <div class="into">
+                            <p>让我们一起走上探秘之旅，寻找php与mysql恋爱的真谛</p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.imooc.com/learn/115">
+                        <img src="images/5707623f0001f96006000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>PHP实现验证码制作</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+
+                        </div>
+                        <div class="into">
+                            <p>各种形态验证码核心原理与实现技巧<br><br></p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="course">
+                <div>
+                    <a href="http://www.imooc.com/learn/184">
+                        <img src="images/572b067f00019abf06000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>PHP面向对象编程</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+
+
+                        </div>
+                        <div class="into">
+                            <p>从容面对面试官的知识宝典<br><br></p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--箭头部分开始-->
+        <div class="arrow_warp">
+            <div class="arrow">
+                <img src="images/dot_program_arrow.png">
+            </div>
+        </div>
+        <!--箭头部分结束-->
+        <div class="third_stage">
+            <h3>第三关 PHP应用进阶</h3>
+            <p>在这关小伙伴们将掌握基本的WEB开发思路和技巧以及MVC设计模式！为通往PHP大师的道路奠定了坚实的基础！</p>
+            <div class="course">
+                <div>
+                    <a href="http://www.imooc.com/learn/68">
+                        <img src="images/578386af00010eea06000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>JSON应用场景与实战</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+
+                        </div>
+                        <div class="into">
+                            <p>你还不知道json吗，赶紧加入我们吧<br><br></p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.imooc.com/learn/148">
+                        <img src="images/53c4bf6d00015b0106000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>手把手教你实现电商网站后台开发</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+                        </div>
+                        <div class="into">
+                            <p>手把手教你用php搭建电子商务平台<br><br></p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="http://www.imooc.com/learn/69">
+                        <img src="images/57075ab500016f5a06000338-300-170.jpg">
+                        <div class="cover">
+                            <h5>MVC架构模式分析与设计</h5>
+                            <span>更新至</span>
+                            <span>课程时长</span>
+
+                        </div>
+                        <div class="into">
+                            <p>由浅入深带您实现人生第一个MVC框架<br><br></p>
+                            <span>1天前</span>
+                            <span>63366人学习</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--第二个箭头-->
+        <div class="arrow_warp">
+            <div class="arrow">
+                <img src="images/dot_program_arrow.png">
+            </div>
+        </div>
+    </div>
+    <!--课程部分结束-->
+    <!--底部图片LOGO-->
+    <div class="bottom">
+        <div class="dot">
+            <img  src="images/dot_program_end.png">
+        </div>
+    </div>
+    <!--底部图片结束-->
+    <!--底部开始-->
+    <div>
+
+    </div>
+    <div class="footer_wrap">
+        <div class="footer ">
+            <div class="links">
+                <p><a href="http://www.imooc.com/">网站首页</a><a href="http://www.imooc.com/about/cooperate">企业合作</a><a href="http://www.imooc.com/about/job">人才招聘</a><a href="http://www.imooc.com/about/contact">联系我们</a><a href="http://www.imooc.com/about/recruit">讲师招募</a><a href="http://www.imooc.com/about/faq">常见问题</a><a href="http://www.imooc.com/user/feedback">意见反馈</a><a href="http://daxue.imooc.com/">慕课大学</a><a href="http://www.imooc.com/about/friendly">友情链接</a>
+                </p>
+                <p>Copyright © 2017 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+            </div>
+            <div class="connect_logo">
+                <a>
+                    <i class="iconfont  wechat">&#xe67f;</i>
+
+                </a>
+                <a href="http://weibo.com/u/3306361973">
+                    <i class="iconfont weibo">&#xe61e;</i>
+                </a>
+                <a href="http://user.qzone.qq.com/1059809142/">
+                    <i class="iconfont qq">&#xe6f7;</i>
+                    <div class="QRcode">
+                    </div>
+                </a>
+            </div>
+            <div class="clearflaot"></div>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>

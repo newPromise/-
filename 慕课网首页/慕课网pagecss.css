@@ -1,0 +1,361 @@
+
+    /*整体样式设置*/
+@font-face {
+    font-family: 'iconfont';  /* project id 241510 */
+    src: url('//at.alicdn.com/t/font_sazvg255vzpvi.eot');
+    src: url('//at.alicdn.com/t/font_sazvg255vzpvi.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_sazvg255vzpvi.woff') format('woff'),
+    url('//at.alicdn.com/t/font_sazvg255vzpvi.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_sazvg255vzpvi.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:32px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    color: gray;
+}
+.iconfont:hover{
+    color: #d3d3d3;
+}
+
+*{
+    padding:0 ;
+    margin: 0;
+}
+.clearfix{
+    overflow: hidden;
+    padding-right: 20px;
+    height: 60px;
+}
+body {
+    background-color: #EDEFF0;
+    font-family: "microsoft yahei";
+
+}
+/*头部开始*/
+.header {
+    background-color:#000000 ;
+}
+.header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav_bar,.logo,.nav_bar ul{
+    float: left;
+}
+.logo{
+    margin: 0 20px;
+}
+.logo a{
+    display: block;
+    height: 60px;
+    width: 140px;
+    background: url("images/logo.png") center no-repeat;
+}
+.nav_bar ul li a {
+    line-height: 60px;
+    padding: 0 25px;
+    display: block;
+    font-size: 14px;
+}
+
+.nav_bar ul li{
+    list-style-type: none;
+    float: left;
+    height: 60px;
+}
+.nav_bar li:hover{
+    background-color: #2B333B;
+}
+.sign_bar{
+    float: right;
+}
+.sign_bar a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+.sign_bar a:hover {
+    background-color: #2B333B;
+    color:#D7FFD7 ;
+}
+.sign_bar a:nth-child(3):hover{
+    background-color: #ff0000;
+}
+
+
+/*这儿  的伪类要明白，  为什么不是first-child  因为这里我们要操作的元素位于第二位*/
+.sign_bar a:nth-child(2){
+    width: 107px;
+    padding: 0 18px;
+    box-sizing: border-box;
+    position: relative;
+}
+.sign_bar input{
+    background-color: transparent;
+    border: #000000;
+    outline: none;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid  #2B333B;
+    color: white;
+}
+.shop_car{
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 0;
+}
+/*中间大图部分开始*/
+.mainPic {
+    text-align: center;
+    background-color: #000000;
+}
+.mainPic img{
+    width: 948px;
+    height: 420px;
+    display: inline-block;
+}
+/*中间大图部分结束*/
+/*加入按钮部分开始*/
+.join{
+    padding-top: 30px;
+    text-align: center;
+}
+.join a{
+    display: inline-block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #C9394A;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0s;
+    text-decoration: none;
+
+}
+
+/*中间按钮部分结束*/
+/*课程部分开始*/
+.first_stage, .second_stage,.third_stage{
+    width: 1000px;
+    margin: 0  auto;
+    padding: 50px 0 ;
+    font-family: "microsoft yahei";
+    color: #656e73;
+}
+
+.stage_wrap h3{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.stage_wrap p {
+    width: 685px;
+
+    margin: 0  auto 20px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+}
+.course div a {
+    display: block;
+    width: 280px;
+    overflow: hidden;
+    color: #808080;
+    text-decoration: none;
+    height: 240px;
+
+}
+.cover,.into{
+    padding: 0  14px;
+}
+
+
+
+.course{
+    display: flex;
+    justify-content: center;
+    padding: 10px  0 ;
+}
+
+.course div div {
+    padding: 0 14px;
+}
+.into,.cover span{
+    float: left;
+    font-size: 12px;
+}
+.into,.cover span:nth-child(3){
+    float: right;
+}
+.into{
+
+
+    display: none;
+
+
+}
+.into p {
+    width: 260px;
+    margin-bottom: 0;
+}
+.into span:nth-child(3) {
+    float: right;
+}
+.into span {
+    float: left;
+}
+.course>div{
+    position: relative;
+    background-color: #FFFFFF;
+    border-radius: 0 0  1px 1px ;
+    margin: 5px  10px  15px;
+
+}
+.course h5{
+    line-height: 50px;
+    font-size: 14px;
+    color: #363d40;
+
+}
+.course div a div {
+    padding: 14px 10px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    width: 260px;
+    text-align: center;
+    overflow: hidden;
+    position: absolute;
+
+}
+.course div a img {
+    width: 280px;
+    height: 160px;
+    transition: 1s linear;
+    display: block;
+    position: relative;
+}
+.course div{
+    transition: box-shadow   1s;
+}
+.course div:hover{
+    box-shadow:  3px  3px 3px 3px lightgray;
+
+}
+
+.course div a:hover .into{
+    display: block;
+}
+
+.course div a:hover img{
+    transform: scale(1.2,1.2);
+    transition: 1s ease-in-out;
+}
+.arrow{
+    text-align: center;
+    border-top: 1px solid  #D0D6D9;
+    position: relative;
+    height: 0;
+
+}
+.arrow img{
+    margin-top: -1px;
+}
+/*课程部分结束*/
+/*底部标志部分*/
+
+.dot{
+    margin-bottom: 170px;
+    margin-top: 60px;
+
+}
+.dot img{
+    margin: 0 auto;
+    display: block;
+}
+/*课程标志部分结束*/
+/*底部部分*/
+.footer_wrap{
+    padding: 27px;
+    background-color: #000000;
+}
+.footer{
+    max-width: 1200px;
+    margin: 0  auto;
+    height: auto;
+}
+/*底部链接部分开始*/
+
+.links{
+    float: left;
+    padding-left: 40px;
+}
+.links a{
+    color: #787d82;
+    margin-right: 30px;
+    line-height: 1.8;
+    font-size: 12px;
+    text-decoration: none;
+}
+.links a:hover{
+    color: #ffffff;
+}
+.links p:last-child{
+    line-height: 1.7;
+    font-size: 12px;
+    color: #787d82;
+
+}
+.connect_logo{
+    padding-right: 40px;
+    zoom: 1;
+}
+.connect_logo a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 3px 6px 0;
+    float: right;
+    position: relative;
+}
+.clearflaot{
+
+    clear: both;
+}
+.clearflaot:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.QRcode{
+    position: absolute;
+    background: url("images/weixin.jpg") no-repeat;
+    width: 150px;
+
+    height: 200px;
+    bottom: 53px;
+    right: -44px;
+    display: none;
+    transition: 2s;
+
+}
+.connect_logo a:last-child:hover  .QRcode{
+    display: block;
+
+
+}
+
+
