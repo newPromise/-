@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            width: 50px;
+            height: 20px;
+            border: 0;
+
+        }
+        .active{
+            background-color: red;
+            color: white;
+            border: 0;
+        }
+
+    </style>
+</head>
+<body>
+<input type="button" value="1" class="active"/>
+<input type="button" value="2"/>
+<input type="button" value="3"/>
+<div><img src="images/wp_ss_20160503_0002.png"></div>
+<div><img src="images/wp_ss_20160503_0003.png"></div>
+<div><img src="images/wp_ss_20160503_0004.png"></div>
+<script>
+    window.onload=function(){
+        var bTn=document.getElementsByTagName("input");
+        var Odiv=document.getElementsByTagName("div");
+        for(var i=0;i<bTn.length;i++){
+            var j=i;
+            (function(j){//使用匿名函数让闭包的行为符合预期
+                bTn[j].onclick=function(){//我们使用了闭包，会导致一些问题，闭包只会取得包含函数中任何变量的
+                    //最后一个值
+                    for(var i=0;i<bTn.length;i++){    //清除所有的按钮和div格式
+                        bTn[i].className="";
+                        Odiv[i].style.display="none";
+                    }
+                    this.className="active"; //使得当前点击的按钮(放生点击事件的按钮）改变颜色
+                    Odiv[j].style.display="block";//使得对应的div层显示出来
+                };
+            })(i);
+        }
+    }
+</script>
+
+</body>
+</html>
