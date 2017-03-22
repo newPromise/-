@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #canvas{
+            width: 1000px;
+            height: 1000px;
+        }
+
+
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="1000px" height="1000px">
+
+</canvas>
+<input type="button" value="停止" id="stop"/>
+<input type="button" value="开始" id="start"/>
+<script type="text/javascript">
+    window.onload=function(){
+        var stop=document.getElementById("stop");
+        var start=document.getElementById("start");
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        function clock(){
+            context.clearRect(0,0,1000,1000);
+            context.fillStyle="#0000ff";
+            var now=new Date();
+            var seconds=now.getSeconds();
+            var minute=now.getMinutes();
+            var hour=now.getHours();
+
+            //画表圈
+            context.save();
+
+            context.beginPath();
+            context.arc(500,500,200,0,2*Math.PI,false);
+            context.closePath();
+            context.stroke();
+            context.restore();
+            //画秒针
+            context.save();
+            context.translate(500,500);
+            context.lineWidth=1;
+            context.rotate(seconds*6*Math.PI/180);
+            context.beginPath();
+            context.moveTo(0,0);
+            context.lineTo(0,-170);
+            context.closePath();
+            context.stroke();
+            context.restore();
+
+
+            //画分针，并且开始运动
+            context.save();
+            context.translate(500,500);
+            context.lineWidth=3;
+            context.rotate(minute*6*Math.PI/180);
+            context.beginPath();
+            context.moveTo(0,0);
+            context.lineTo(0,-160);
+            context.closePath();
+            context.stroke();
+            context.restore();
+            //画时针
+            context.save();
+            context.translate(500,500);
+            context.lineWidth=5;
+            context.rotate(hour*30*Math.PI/180);
+            context.beginPath();
+            context.moveTo(0,0);
+            context.lineTo(0,-100);
+            context.closePath();
+            context.stroke();
+            context.restore();
+            for(var i=0;i<60;i++){
+                context.save();
+                context.lineWidth=1;
+                if(seconds==i||minute==i){
+                    context.strokeStyle="red";
+                }
+               else {
+                    context.strokeStyle = "black";
+                }
+                context.translate(500,500);
+                context.rotate(i*6*Math.PI/180);
+                context.beginPath();
+                context.moveTo(0,-170);
+                context.lineTo(0,-180);
+                context.stroke();
+                context.closePath();
+                context.restore();
+
+            }
+            for(var i=0;i<12;i++){
+                context.save();
+                context.lineWidth=4;
+                context.translate(500,500);
+                context.rotate(i*30*Math.PI/180);
+                context.beginPath();
+                context.moveTo(0,-170);
+                context.lineTo(0,-180);
+                context.stroke();
+                context.closePath();
+                context.restore();
+
+            }
+
+        }
+        clock();
+        var timer;
+
+        timer= setInterval(clock,1000);
+       stop.onclick=function(){
+           clearInterval(timer);
+       };
+       start.onclick=function(){
+           timer= setInterval(clock,1000);
+       }
+
+
+
+
+
+    }
+</script>
+</body>
+</html>
