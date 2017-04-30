@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .stage{
+            display: flex;
+
+            perspective: 1500px;
+        }
+        .void{
+            clear: both;
+        }
+        .container{
+
+            width: 500px;
+            height: 250px;
+            /*通过改变height也可以改变是俯视还是仰视效果*/
+            margin: 0 auto;
+            transform-style: preserve-3d;
+        }
+        .container img{
+            margin: auto;
+            width: 500px;
+            height: 400px;
+            position: absolute;
+
+        }
+        /*
+
+        img:nth-child(1){
+
+            transform: rotateY(0deg) translateZ(280px)   translateX(0px);
+        translateY(0px);;
+        }
+        img:nth-child(2){
+            transform: rotateY(60deg) translateZ(280px);
+        }
+        img:nth-child(3){
+            transform: rotateY(120deg) translateZ(280px);
+        }
+        img:nth-child(4){
+            transform: rotateY(180deg) translateZ(280px);
+        }
+        img:nth-child(5){
+            transform: rotateY(240deg) translateZ(280px);
+        }
+        img:nth-child(6){
+            transform: rotateY(300deg) translateZ(280px);
+        }
+        */
+
+    </style>
+</head>
+<body>
+<div class="stage">
+    <div class="container">
+        <img src="imgs/Desert.jpg" >
+        <img src="imgs/Lighthouse.jpg">
+        <img src="imgs/Jellyfish.jpg">
+        <img src="imgs/Koala.jpg">
+        <img src="imgs/Tulips.jpg">
+        <img src="imgs/Penguins.jpg">
+        <div class="void"></div>
+
+    </div>
+</div>
+<script src="3D%20轮播图.js"></script>
+<script>
+    window.onload=function(){
+
+    }
+</script>
+</body>
+</html>

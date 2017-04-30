@@ -1,0 +1,98 @@
+.album{
+    border: 1px solid black;
+    margin: 0 auto;
+    position: relative;
+}
+.img1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.al2_img1,.al2_img2,
+.al3_img1,.al3_img2,.al3_img3,
+.al4_img1,.al4_img2,.al4_img3,.al4_img4,
+.al5_img1,.al5_img2,.al5_img3,.al5_img4,.al5_img5,
+.al6_img1,.al6_img2,.al6_img3,.al6_img4,.al6_img5,.al6_img6
+
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.al2_img1{
+    -moz-clip-path:polygon(0 0, 67% 0, 33% 100%, 0% 100%); ;
+    -ms-clip-path:polygon(0 0, 67% 0, 33% 100%, 0% 100%); ;
+    -webkit-clip-path: polygon(0 0, 67% 0, 33% 100%, 0% 100%);
+    clip-path: polygon(0 0, 67% 0, 33% 100%, 0% 100%);
+}
+.al2_img2{
+    -moz-clip-path:polygon(67% 0, 100% 0, 100% 100%, 33% 100%) ;
+    -ms-clip-path:polygon(67% 0, 100% 0, 100% 100%, 33% 100%) ;
+    -webkit-clip-path: polygon(67% 0, 100% 0, 100% 100%, 33% 100%);
+    clip-path: polygon(67% 0, 100% 0, 100% 100%, 33% 100%);
+}
+.al3_img2{
+    top:0;
+    right: 0;
+}
+.al3_img3{
+    bottom: 0;
+    right: 0;
+}
+.al4_img1{
+    top: 0;
+    left: 0;
+}
+.al4_img2{
+    top: 0;
+    right: 0;
+}
+.al4_img3{
+    bottom: 0;
+    right: 0;
+}
+.al4_img4{
+    bottom: 0;
+    left: 0;
+}
+.al5_img1{
+    top: 0;
+    left: 0;
+}
+.al5_img2{
+    top: 0;
+    right: 0;
+}
+.al5_img3{
+    bottom:0;
+    right: 0;
+}
+.al5_img4{
+    bottom: 0;
+}
+.al5_img5{
+    bottom: 0;
+    left: 0;
+}
+.al6_img1{
+    top: 0;
+    left: 0;
+}
+.al6_img2{
+    top: 0;
+    right: 0;
+}
+.al6_img3{
+    right: 0;
+}
+.al6_img4{
+    right: 0;
+    bottom: 0;
+}
+.al6_img5{
+    bottom: 0;
+}
+.al6_img6{
+    bottom: 0;
+    left: 0;
+}

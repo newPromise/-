@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="相框拼图布局外部样式.css">
+    <style>
+        div{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+<input type="button" class="button" value="布局1">
+<input type="button" class="button" value="布局2">
+<input type="button" class="button" value="布局3">
+<input type="button" class="button" value="布局4">
+<input type="button" class="button" value="布局5">
+<input type="button" class="button" value="布局6">
+<script type="text/javascript" src="相框拼图布局外部js.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        var Btn=document.getElementsByClassName("button");
+        for(var  i=0;i<6;i++){
+            Btn[i].onclick=function(ev) {
+                return function () {
+                    layout("400px", "400px", ev + 1, "imgs/Lighthouse.jpg", "imgs/Desert.jpg", "imgs/Penguins.jpg", "imgs/Tulips.jpg", "imgs/Jellyfish.jpg", "imgs/Hydrangeas.jpg");
+                }
+            }(i);
+
+        }
+
+        //layout函数的参数
+        //layout(width,height,picnumber,url1,url2,url3,url4......)
+        //输入全部的url,然后写明数量来表明要显示几张图片
+
+    }
+</script>
+</body>
+</html>
