@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <style>
+        .content{
+            position: relative;
+        }
+        #submit{
+            font-size: 20px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 50px;
+            border: 0;
+            margin: auto;
+        }
+        .footer{
+            position: absolute;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            bottom: 0;
+        }
+        .footer a{
+            display: inline-block;
+            margin: auto;
+        }
+        .title{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .main{
+            margin: 0 100px;
+        }
+        form  span{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            margin: 20px;
+        }
+        form input{
+            margin-left: 25px;
+        }
+    </style>
+</head>
+<body>
+<div class="content radius">
+    <div id="header">
+        <div class="head">
+            <span>问卷管理</span>
+            <span><a href="survey list.html" >我的问卷</a></span>
+        </div>
+    </div>
+    <p class="title"></p>
+    <div class="main">
+
+            <!--都不变，直接将innerHTML获取到dom,然后改变type,后面的说明是之前的value值-->
+            <!--创建一个form标签，还是创建多个form标签呢？？-->
+
+    </div>
+    <div class="footer">
+        <a href="survey%20list.html"><input type="submit" value="提交" id="submit"></a>
+    </div>
+</div>
+
+
+
+</body>
+<script type="text/javascript">
+    window.onload=function() {
+        var oMain = document.getElementsByClassName("main")[0];
+        //注意，使用sessionStorage得到的是字符串，我们要想如何将其转化为html的格式？？
+        var oContent = sessionStorage.getItem("order" + sessionStorage.getItem("clickIndex"));
+        var content = document.createElement("div");
+        var oTitle=document.getElementsByClassName("title")[0];
+        oTitle.innerText=sessionStorage.getItem("title"+sessionStorage.getItem("clickIndex"));
+        content.innerHTML = oContent;
+        var oDiv = content.getElementsByClassName("choice");
+
+        for (let i = 0; i < oDiv.length; i++) {
+            var oForm = document.createElement("form");
+            var para = document.createElement("p");
+            var oInput = oDiv[i].getElementsByTagName("div")[0].getElementsByTagName("input");//这儿我们得到input标签
+            var listTitle = oDiv[i].getElementsByTagName("span")[0].innerText;
+
+            var oSpan = document.createElement("span");
+            oSpan.innerHTML=listTitle;
+            para.appendChild(oSpan);
+            para.innerText=listTitle +"  ";
+            para.innerText += oInput[0].getAttribute("value");
+            oForm.appendChild(para);
+            for (let j = 1; j < (oInput.length); j++) {
+                var list = document.createElement("input");
+                if(oInput[0].getAttribute("class")=="radio"){
+                    list.setAttribute("type", "radio");
+                    list.setAttribute("name",oInput[0].getAttribute("value"));
+                }else if(oInput[0].getAttribute("class")=="checkbox"){
+
+                    list.setAttribute("type", "checkbox");
+                }else{//这里有bug
+                    list=document.createElement("textarea");
+                    list.style.width="500px";
+                    list.style.height="200px";
+                }
+                oForm.appendChild(list);
+                oForm.innerHTML += oInput[j].getAttribute("value") + "<br/>";
+            }
+            oMain.appendChild(oForm);
+        }
+    }
+
+</script>
+</html>
