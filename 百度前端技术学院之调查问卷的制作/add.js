@@ -159,11 +159,7 @@ function addhavier(){
         };
     }
     //下面的是执行
-    for(var i=0;i<oInput.length-3;i++){
-        oInput[i].onfocus=function(){
-            this.select();
-        }
-    }
+    
 }
 oAddque.onclick=function() {
     if(oQuestyle.style.display=="none"){
