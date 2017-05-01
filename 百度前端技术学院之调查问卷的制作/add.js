@@ -27,6 +27,7 @@ nairNum=0;
 
 if(sessionStorage.getItem("editJuge")=="true") {
     var oEditnum = sessionStorage.getItem("editNum");
+
     //加载了innerHTML之后，原来的动作不起作用了
     oTitle.setAttribute("value",sessionStorage.getItem("title"+oEditnum));
     oDate.setAttribute("value",sessionStorage.getItem("date"+oEditnum));
@@ -168,7 +169,7 @@ oAddque.onclick=function() {
         oQuestyle.style.display="none";
     }
 };
-sessionStorage.setItem("saveJuge",false);
+sessionStorage.setItem("saveJuge", false);
 document.addEventListener("click",function(event){//这里我们用了事件委托,要
     event?event:window.event;
     var target=event.target||event.srcElement;
@@ -233,7 +234,7 @@ document.addEventListener("click",function(event){//这里我们用了事件委�
                 sessionStorage.setItem("order" + sessionStorage.getItem("editNum"), oQuearea.innerHTML);
                 sessionStorage.setItem("date" + number, oDate.value);
                 sessionStorage.setItem("title" +number, oTitle.value);
-                //sessionStorage.setItem("editJuge", false)
+                sessionStorage.setItem("editJuge", false)
             } else {
                 var number = sessionStorage.getItem("number");
                 //  sessionStorage.setItem("oldValue", number);
@@ -257,3 +258,4 @@ document.addEventListener("click",function(event){//这里我们用了事件委�
                 sessionStorage.setItem("bText", bText);
             }
     }})
+
