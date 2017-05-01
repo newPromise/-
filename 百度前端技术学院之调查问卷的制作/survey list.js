@@ -60,8 +60,9 @@ for (let i = 0; i < Number(number) + 1; i++) {
     }
 
     oTbody.appendChild(oTr);
-    sessionStorage.setItem("editNum", i);
+   
     oTr.getElementsByTagName("td")[3].getElementsByTagName("span")[0].onclick = function () {
+         sessionStorage.setItem("editNum", i);
         sessionStorage.setItem("editJuge", true);
     };
     oTr.getElementsByTagName("td")[3].getElementsByTagName("span")[1].onclick = function () {
