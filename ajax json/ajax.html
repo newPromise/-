@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<div id="div"></div>
+<img id="img" >
+<body>
+<script src="http://mockjs.com/dist/mock.js"></script>
+<script src="jquery-1.12.0.min.js"></script>
+
+    <script>
+    // 使用 Mock
+    Mock.mock('text.json',"get", {
+        'name'     : 'zhang',
+        'age|1-100': 100,
+        'color'    : 'red',
+        'url':"middle-left.jpg"
+    });
+    $.get({
+        url: 'text.json',
+        dataType:'json',
+        success:function(data){
+            $("#img").attr("src",data.url);
+
+        },
+        error:function(){
+            alert("获取错误");
+        }
+
+    })
+</script>
+
+
+
+
+</body>
+</html>

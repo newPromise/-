@@ -9,7 +9,7 @@ oire.onclick=function(){
 var oTbody = document.getElementsByTagName("tbody")[0];
 var number = sessionStorage.getItem("number");
 var oldValue=sessionStorage.getItem("oldValue");
-for (let i = 0; i < Number(number) + 1; i++) {
+for (var i = 0; i < Number(number) + 1; i++) {
     var oTr = document.createElement("tr");
     for (var j = 0; j < 4; j++) {
         var oTd = document.createElement("td");
@@ -45,7 +45,6 @@ for (let i = 0; i < Number(number) + 1; i++) {
             oTr.getElementsByTagName("td")[2].innerHTML = "<span>已发布</span>";
             bJudge = false;
         } else {
-
             oTr.getElementsByTagName("td")[2].innerHTML = "<span>问卷截止</span>";
             var removelink = oTr.getElementsByTagName("td")[3].getElementsByTagName("span")[3];
             removelink.getElementsByTagName("a")[0].setAttribute("href", "");
@@ -71,12 +70,7 @@ for (let i = 0; i < Number(number) + 1; i++) {
 
         }
         var parents = this.parentNode.parentNode;
-        for(var i=parents.index-1;i<Number(sessionStorage.getItem("number"));i++){
-            sessionStorage.setItem("title"+i,sessionStorage.getItem("title"+(i+1)));
-            sessionStorage.setItem("date"+i,sessionStorage.getItem("date"+(i+1)));
-        }
         parents.parentNode.removeChild(parents);
-        sessionStorage.setItem("number", sessionStorage.getItem("number")-1);
     };
     oTr.getElementsByTagName("td")[3].getElementsByTagName("span")[3].onclick = function () {
         sessionStorage.setItem("clickIndex", i);
