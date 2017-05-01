@@ -35,7 +35,7 @@ if(sessionStorage.getItem("editJuge")=="true") {
 
     //alert(order);
     bText=sessionStorage.getItem("bText");
-    //sessionStorage.setItem("editJuge",false);
+    sessionStorage.setItem("editJuge",false);
 }
 
 function addRadio(){
