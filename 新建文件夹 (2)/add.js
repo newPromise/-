@@ -36,7 +36,7 @@ if(sessionStorage.getItem("editJuge")=="true") {
 
     //alert(order);
     bText=sessionStorage.getItem("bText");
-    //sessionStorage.setItem("editJuge",false);
+    sessionStorage.setItem("editJuge",false);
 }
 
 function addRadio(){
@@ -160,11 +160,7 @@ function addhavier(){
         };
     }
     //下面的是执行
-    for(var i=0;i<oInput.length-3;i++){
-        oInput[i].onfocus=function(){
-            this.select();
-        }
-    }
+    
 }
 oAddque.onclick=function() {
     if(oQuestyle.style.display=="none"){
