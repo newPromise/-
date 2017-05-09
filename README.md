@@ -4,7 +4,7 @@
 <p><b>毕业院校：</b>集美大学轮机工程学院2017本科毕业生</p>
 <p><b>联系方式：</b>15659808620       250621458@qq.com</p>
 <p><b>语言水平：</b>CET-6,可以在stackoverflow上阅读前端相关知识</p>
-<p>集美大学轮机工程学院2017届本科毕业生，自学前端四个月，现在掌握的技能如下：</br>html+css+javascript,实现使用CSS实现常见布局，掌握对于js的D基本OM操作，响应式布局，ajax,sessionStorage,理解js中的原型，闭包，作用域，原型链等概念，熟悉jQuery</p>
+<p>集美大学轮机工程学院2017届本科毕业生，现在掌握的技能如下：</br>html+css+javascript,实现使用CSS实现常见布局，掌握对于js的D基本OM操作，响应式布局，ajax,sessionStorage,理解js中的原型，闭包，作用域，原型链等概念，熟悉jQuery</p>
 <h2>我的博客</h2>
 <a href="http://www.cnblogs.com/qianduangaoshou/">我的博客</a>
 <h2>我的作品</h2>
