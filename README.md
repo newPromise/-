@@ -5,7 +5,7 @@
 <p><b>毕业时间：2017年6月</b></p>
 <p><b>联系方式：</b>15659808620       250621458@qq.com</p>
 <p><b>语言水平：</b>CET-6,可以在stackoverflow上阅读前端相关知识</p>
-<p>集美大学轮机工程学院2017届本科毕业生，现在掌握的技能如下：</br>html+css+javascript,实现使用CSS实现常见布局，掌握对于js的基本DOM操作，响应式布局，ajax,sessionStorage,理解js中的原型，闭包，作用域，原型链等概念, 库或框架：jQuery bootstrap 对于vue.js具有一定的使用能力，使用xue完成了阅文集团的官方首页。工具：git版本控制，css编译工具scss</p>
+<p>集美大学轮机工程学院2017届本科毕业生，现在掌握的技能如下：</br>html+css+javascript,实现使用CSS实现常见布局，掌握对于js的基本DOM操作，响应式布局，ajax,sessionStorage,理解js中的原型，闭包，作用域，原型链等概念, 库或框架：jQuery bootstrap 对于vue.js具有一定的使用能力，使用vue完成了阅文集团的官方首页。工具：git版本控制，css编译工具scss</p>
 <h2>我的博客</h2>
 <a href="http://www.cnblogs.com/qianduangaoshou/">我的博客</a>
 <h2>我的作品</h2>
