@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+table{
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid gray ;
+    width: 50px;
+    height: 50px;
+}
+.row{
+    position: absolute;
+    top: -50px;
+    font-size: 0;
+}
+.col{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: -50px;
+    top: 0;
+}
+span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 50px;
+
+}
+.container{
+    width: 500px;
+    height: 500px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+
+}
+.active{
+    background-color: blue;
+}
+.food{
+    background-color: red;
+}
+#score,.score{
+    position: absolute;
+    right: -500px;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+}
+.score{
+    top: -50px;
+}
