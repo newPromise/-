@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main{
+            margin: 0 auto;
+            text-align: center;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+
+        }
+        span{
+            display: inline-block;
+            text-align:center;
+            font-size: 30px;
+            width: 404px;
+            height: 100px;
+            background-color: darkgrey;
+
+        }
+        table td{
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: lightgrey;
+            border:1px solid darkgrey;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+ <span id="input">
+
+    </span>
+
+<table>
+
+
+
+    <tbody>
+        <tr>
+            <td>C</td>
+            <td>D</td>
+            <td>.</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td>(</td>
+            <td>0</td>
+            <td>)</td>
+            <td>=</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script  type="text/javascript">
+
+
+    $(function(){
+        var $td=$("td");
+        $td.each(function(){
+            $(this).click(function(){
+                var Text=$("#input").text().trim();
+                $("#input").append($(this).text());
+                switch ($(this).text()){
+                    case "C":
+                        $("#input").text("");
+                        break;
+                    case "D":
+                        $("#input").text(Text.substr(0,Text.length-1));
+                        break;
+                    case "=":
+                        function  compute(content){
+                            var index=content.lastIndexOf("(");
+                            if(index>-1){
+                                var nextIndex=content.indexOf(")",index);
+                                if(nextIndex>-1){
+                                    //递归的思想,一步一步的递归
+                                    var result=compute(content.substring(index+1,nextIndex));
+                                    return compute(content.substring(0,index)+(""+result)+content.substring(nextIndex+1))
+                                }
+
+                            }
+                            index=content.indexOf("+");
+                            if(index>-1){
+                                return compute(content.substring(0,index))+compute(content.substring(index+1));
+                            }
+                            index=content.lastIndexOf("-");
+                            if(index>-1){
+                                return compute(content.substring(0,index))-compute(content.substring(index+1));
+                            }
+                            //如果返回的content为空,则返回0
+                            index=content.indexOf("*");
+                            if(index>-1){
+                                return compute(content.substring(0,index))*compute(content.substring(index+1));
+                            }
+                            index=content.lastIndexOf("/");
+                            if(index>-1){
+                                return compute(content.substring(0,index))/compute(content.substring(index+1));
+                            }
+                            if(content==""){
+                                return 0;
+                            }else{
+                            //将content字符串转化为数值,
+                            //这儿也可以使用一些技巧,比如 content-1+1,使用加减操作符,将字符串转化为数值
+                                return Number(content);
+                            }
+                        }
+                        $("#input").text(compute(Text));
+                }
+            })
+
+        });
+    })
+</script>
+</body>
+</html>

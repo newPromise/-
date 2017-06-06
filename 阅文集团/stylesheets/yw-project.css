@@ -1,0 +1,903 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.clearfix{
+  overflow: hidden;
+  zoom: 1;
+}
+body{
+  font-size: 14px;
+  font-family: 'PingFang SC','Myriad Pro','Hiragino Sans GB','microsoft yahei';
+  line-height: 1.5;
+}
+.con-m{
+  margin: 0 auto;
+  width: 964px;
+
+}
+.clearfix{
+  overflow: hidden;
+  zoom: 1;
+}
+.container{
+  background: url("../images/bag-bg-img.png") no-repeat;
+}
+.yw-logo{
+
+  top: 15px;
+  color: black;
+  position: absolute;
+  left: 0;
+  width: 138px;
+  height: 44px;
+  background: url("../images/yw-logo.png") no-repeat 0 -44px;
+  transform-origin: left center;
+  z-index:1;
+}
+
+.nav-bar-active{
+  background-color: transparent;
+  color: white;
+
+}
+.nav-bar-active .yw-logo{
+  background-position: 0 0;
+}
+.nav-bar{
+  background-color: white;
+  color: black;
+
+}
+.nav-hd-bar{
+  position: relative;
+}
+
+.nav-tags{
+  position: absolute;
+  right: 125px;
+}
+.nav-tags a, .join-us-btn{
+  display: inline-block;
+  height: 34px;
+  line-height: 34px;
+  padding: 20px 16px 17px;
+  font-size: 16px;
+  transition: all 0.25s;
+}
+.nav-tags a:hover{
+  color: #fff;
+  background-color: #019ee4;
+  box-shadow: 0 1px #019ee4, 0 2px #019ee4, 0 3px #019ee4;
+  border-bottom: 3px solid #019ee4;
+  border-bottom: 0 rgba(0,0,0,0);
+}
+.join-us-btn{
+  position: absolute;
+  padding: 0 10px!important;
+  border:1px solid black;
+  border-radius: 4px;
+  top: 21px;
+  right: 0;
+  z-index: 1;
+}
+.hd-slide{
+  height: 511px;
+  position: relative;
+  color: white;
+}
+.hd-slide-1,.hd-slide-2,.hd-slide-3{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+  z-index: 1;
+
+
+}
+.hd-slide-wz{
+  margin-top: 135px;
+}
+.hd-slide-h{
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 400;
+}
+.hd-slide-p{
+  line-height: 1.4;
+  font-size: 36px;
+  font-weight: 300;
+}
+.hd-slide-btn{
+  display: block;
+  width: 240px;
+  padding: 10px 0;
+  margin-top: 30px;
+  background-color: #03a0e5;
+  border-radius: 4px;
+  text-indent: 20px;
+  font-size: 24px;
+  font-weight: 300;
+  position: relative;
+}
+.void{
+  clear: both;
+}
+.hd-slide-x{
+  zoom: 1;
+}
+.hd-slide-x:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.hd-slide-1{
+  display: block;
+  opacity: 1;
+  background: url("../images/yw-hd-bg-1_m.jpg") no-repeat;
+}
+.hd-slide-2{
+  background: url("../images/yw-hd-bg-2_m.jpg") no-repeat;
+}
+.hd-slide-3{
+
+  background: url("../images/yw-hd-bg-3_m.jpg") no-repeat;
+}
+.slide-dot{
+  position: absolute;
+  bottom: 36px;
+  z-index: 10;
+  opacity: 1;
+}
+.slide-dot span{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.hd-resume-top{
+  padding-top: 55px;
+  color: #717678;
+}
+.hd-resume-data{
+  width: 29.46%;
+  display: inline-block;
+}
+.hd-data-1{
+  float: left;
+}
+.hd-data-3{
+  float: right;
+}
+.hd-data-2{
+  margin-left: 5.81%;
+}
+.hd-resume-data>span{
+  font-weight: 300;
+}
+.icon-pen,.icon-book,.icon-user{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  background: url("images/icons-brand.png") no-repeat;
+}
+
+
+.icon-pen{
+
+
+  background:url("../images/icon-pen.svg") center no-repeat ;
+  margin-left: -82px;
+
+}
+.icon-book{
+  margin-left: -92px;
+  background: url("../images/icon-book.svg") center no-repeat;
+}
+.icon-user{
+  margin-left: -100px;
+  background: url("../images/icon-person.svg") center no-repeat;
+}
+#brands{
+  background: url("../images/yw-brand-bg.jpg") no-repeat center;
+}
+.brand {
+  background-image: url("../images/icons-brand2.png");
+
+}
+
+.nav-a-last{
+  width: 100%;
+  display: inline-block;
+}
+.contact-map{
+  background: url("../images/half-sino.png") no-repeat right 80%;
+  position: relative;
+}
+.icon-share{
+  background: url("../images/icons-share.png") no-repeat;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.slide-fade-enter-active{
+  animation: fadeInUp .5s ease-in-out;
+
+}
+.slide-fade-enter, .slide-fade-leave-active {
+
+  opacity: 0;
+
+}
+@keyframes bounceInRight {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mobile-slide-enter-active{
+  animation: bounceInRight 0.3s;
+}
+
+/* line 3, ../sass/yw-project.scss */
+body {
+  font-family: 'PingFang SC','Myriad Pro','Hiragino Sans GB','microsoft yahei';
+}
+
+/* line 6, ../sass/yw-project.scss */
+#nav-bar {
+  height: 74px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+/* line 15, ../sass/yw-project.scss */
+#nav-bar .nav-bar-active {
+  background-color: transparent;
+  color: white;
+}
+/* line 18, ../sass/yw-project.scss */
+#nav-bar .nav-bar-active .yw-logo {
+  background-position: 0 -44px;
+}
+/* line 23, ../sass/yw-project.scss */
+#nav-bar .nav-bar {
+  background-color: white;
+  color: black;
+}
+/* line 28, ../sass/yw-project.scss */
+#nav-bar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 34, ../sass/yw-project.scss */
+.hd-resume-para2 {
+  color: #717678;
+  margin-top: 20px;
+}
+
+/* line 38, ../sass/yw-project.scss */
+.hd-resume-para {
+  color: #019ee4;
+  font-size: 24px;
+  padding: 40px 0 0 90px;
+}
+
+/* line 44, ../sass/yw-project.scss */
+.hd-data-1 .hd-resume-para {
+  padding-left: 64px;
+}
+
+/* line 50, ../sass/yw-project.scss */
+.hd-resume-bto {
+  margin: 50px 0;
+  font-size: 16px;
+  text-indent: 2em;
+  letter-spacing: .5px;
+  font-weight: 300;
+  text-shadow: 0 1px #fff;
+  line-height: 1.8;
+}
+
+/* line 59, ../sass/yw-project.scss */
+.yw-opera-h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+/* line 65, ../sass/yw-project.scss */
+.yw-opera-pics {
+  height: 512px;
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+}
+/* line 71, ../sass/yw-project.scss */
+.yw-opera-pics .yw-pics-ul {
+  width: 2880px;
+  position: absolute;
+  height: 480px;
+  top: 0;
+  left: 50%;
+  margin-left: -1440px;
+  transition: 1s ease-in-out;
+}
+/* line 80, ../sass/yw-project.scss */
+.yw-opera-pics .yw-pics-ul .yw-pics-li {
+  list-style: none;
+  float: left;
+  width: 320px;
+}
+/* line 84, ../sass/yw-project.scss */
+.yw-opera-pics .yw-pics-ul .yw-pics-li .yw-pic-part {
+  position: relative;
+}
+/* line 86, ../sass/yw-project.scss */
+.yw-opera-pics .yw-pics-ul .yw-pics-li .yw-pic-part:hover .yw-pic-conWrap {
+  opacity: 1;
+}
+/* line 89, ../sass/yw-project.scss */
+.yw-opera-pics .yw-pics-ul .yw-pics-li .yw-pic-part:hover .yw-pics-ul {
+  transform: translateX(500px);
+}
+/* line 92, ../sass/yw-project.scss */
+.yw-opera-pics .yw-pics-ul .yw-pics-li .yw-pic-part .yw-pic-conWrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-weight: 300;
+  background: #019ee4;
+  white-space: nowrap;
+  text-align: center;
+  cursor: default;
+  -webkit-transition: visibility .4s, opacity .25s;
+  transition: visibility .4s, opacity .25s;
+  -ms-pointer-events: none;
+  pointer-events: none;
+  opacity: 0;
+}
+/* line 110, ../sass/yw-project.scss */
+.yw-opera-pics .yw-pics-ul .yw-pics-li .yw-pic-part img {
+  vertical-align: top;
+  width: 320px;
+}
+
+/* line 121, ../sass/yw-project.scss */
+.yw-pic-part:last-child img {
+  width: 320px;
+  height: 160px;
+}
+
+/* line 126, ../sass/yw-project.scss */
+#mobile {
+  padding-top: 28px;
+}
+/* line 128, ../sass/yw-project.scss */
+#mobile .mobile-tab {
+  margin: 41px auto;
+  width: 264px;
+  position: relative;
+}
+/* line 132, ../sass/yw-project.scss */
+#mobile .mobile-tab p {
+  text-align: justify;
+  font-size: 0;
+  border-bottom: 1px solid black;
+}
+/* line 137, ../sass/yw-project.scss */
+#mobile .mobile-tab span {
+  display: inline-block;
+  width: 100%;
+}
+/* line 141, ../sass/yw-project.scss */
+#mobile .mobile-tab .yw-tab-hline {
+  position: absolute;
+  width: 54px;
+  bottom: -2px;
+  left: 0;
+  border-top: 5px solid #019ee4;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+/* line 154, ../sass/yw-project.scss */
+#mobile .mobile-imgs {
+  height: 396px;
+  position: relative;
+  transition: 2s;
+}
+/* line 158, ../sass/yw-project.scss */
+#mobile .mobile-imgs .mobile-imags-imgx {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 164, ../sass/yw-project.scss */
+#mobile .mobile-imgs .mobile-imags-imgx .mobile-imags-img {
+  transition: 2s;
+  height: 396px;
+  margin-left: -25px;
+  vertical-align: bottom;
+}
+/* line 171, ../sass/yw-project.scss */
+#mobile .mobile-imgs .mobile-imgs-dec {
+  margin-left: 485px;
+  padding-top: 96px;
+}
+/* line 174, ../sass/yw-project.scss */
+#mobile .mobile-imgs .mobile-imgs-dec .mobile-dec-h3 {
+  font-size: 36px;
+  font-weight: 400;
+}
+/* line 178, ../sass/yw-project.scss */
+#mobile .mobile-imgs .mobile-imgs-dec .mobile-dec-p {
+  margin: 5px 50px 40px 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 183, ../sass/yw-project.scss */
+#mobile .mobile-imgs .mobile-imgs-dec .mobile-dec-btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  padding: 10px 18px;
+  background-color: #03a0e5;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+/* line 185, ../sass/yw-project.scss */
+#mobile .mobile-imgs .mobile-imgs-dec .mobile-dec-btn :hover {
+  background-color: deepskyblue;
+}
+/* line 200, ../sass/yw-project.scss */
+#mobile .mobile-tab-a {
+  font-family: 'PingFang SC','Myriad Pro','Hiragino Sans GB','microsoft yahei';
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  transition: color .25s;
+}
+/* line 203, ../sass/yw-project.scss */
+#mobile .mobile-tab-a:hover {
+  color: #49B9EB;
+}
+
+/* line 218, ../sass/yw-project.scss */
+.brand-qidian {
+  background-position: 0 -480px;
+}
+
+/* line 218, ../sass/yw-project.scss */
+.brand-chuangshi {
+  background-position: 0 0;
+}
+
+/* line 218, ../sass/yw-project.scss */
+.brand-yunqi {
+  background-position: 0 -1200px;
+}
+
+/* line 224, ../sass/yw-project.scss */
+.brand-nav .brand-yunqi {
+  clip: rect(0 200px 100px 70px) !important;
+}
+
+/* line 218, ../sass/yw-project.scss */
+.brand-hongxiu {
+  background-position: 0 -80px;
+}
+
+/* line 228, ../sass/yw-project.scss */
+.brand-nav .brand-hongxiu {
+  clip: rect(0 200px 100px 70px) !important;
+}
+
+/* line 218, ../sass/yw-project.scss */
+.brand-xiaoxiang {
+  background-position: 0 -880px;
+}
+
+/* line 232, ../sass/yw-project.scss */
+.brand-nav .brand-xiaoxiang {
+  clip: rect(0 200px 100px 70px) !important;
+}
+
+/* line 218, ../sass/yw-project.scss */
+.brand-qdmn {
+  background-position: 0 -400px;
+}
+
+/* line 236, ../sass/yw-project.scss */
+.brand-nav .brand-qdmn {
+  clip: rect(0 200px 100px 70px) !important;
+}
+
+/* line 218, ../sass/yw-project.scss */
+.brand-readnovel {
+  background-position: 0 -960px;
+}
+
+/* line 242, ../sass/yw-project.scss */
+#brands {
+  position: relative;
+  height: 535px;
+  padding-top: 30px;
+  background: #454c5f url("images/yw-brand-bg.jpg") no-repeat center;
+  color: #fff;
+}
+/* line 244, ../sass/yw-project.scss */
+#brands .brand {
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+}
+/* line 255, ../sass/yw-project.scss */
+#brands .yw-brand-h3 {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+/* line 261, ../sass/yw-project.scss */
+#brands .brand-dec {
+  min-height: 160px;
+  margin-top: 46px;
+  position: relative;
+}
+/* line 265, ../sass/yw-project.scss */
+#brands .brand-dec .brand-dec-i {
+  position: absolute;
+  left: 0;
+  margin: 15px 0 0 50px;
+}
+/* line 270, ../sass/yw-project.scss */
+#brands .brand-dec .brand-dec-p {
+  line-height: 26px;
+  margin-left: 322px;
+  font-size: 16px;
+  font-weight: 200;
+}
+/* line 278, ../sass/yw-project.scss */
+#brands .brand-nav {
+  position: absolute;
+  top: 310px;
+  width: 964px;
+}
+/* line 282, ../sass/yw-project.scss */
+#brands .brand-nav p {
+  text-align: justify;
+}
+/* line 284, ../sass/yw-project.scss */
+#brands .brand-nav p span {
+  width: 100%;
+  display: inline-block;
+}
+/* line 292, ../sass/yw-project.scss */
+#brands .brand-nav .brand-nav-i {
+  transform: scale(0.6);
+  display: inline-block;
+  width: 200px;
+  height: 80px;
+  background-repeat: no-repeat;
+  position: absolute;
+  clip: rect(0 200px 100px 50px);
+  left: 50%;
+  top: 50%;
+  margin: -24px 0 0 -75px;
+  margin: -40px calc(0px) 0 -117px;
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  transform: scale(0.6);
+}
+/* line 310, ../sass/yw-project.scss */
+#brands .brand-nav .brand-nav-a:hover {
+  opacity: 1;
+  filter: none;
+  box-shadow: inset 0 0 0 2px white;
+}
+/* line 316, ../sass/yw-project.scss */
+#brands .brand-nav .brand-nav-a {
+  display: inline-block;
+  width: 138px;
+  height: 58px;
+  line-height: 1.5;
+  margin-bottom: 17px;
+  border: 1px solid #757A87;
+  vertical-align: top;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: opacity .25s;
+  transition: opacity .25s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+/* line 334, ../sass/yw-project.scss */
+#news {
+  padding: 29px 0 44px;
+  overflow: hidden;
+}
+/* line 335, ../sass/yw-project.scss */
+#news a {
+  text-decoration: none;
+}
+/* line 340, ../sass/yw-project.scss */
+#news .news-h {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+}
+/* line 348, ../sass/yw-project.scss */
+#news .news-x {
+  margin-top: 40px;
+  margin-right: -88px;
+}
+/* line 352, ../sass/yw-project.scss */
+#news .news-x .news-more-btn {
+  display: block;
+  margin: auto;
+  width: 120px;
+  padding: 10px 18px;
+  background-color: #03a0e5;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  left: -44px;
+}
+/* line 371, ../sass/yw-project.scss */
+#news .news-item {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 40px;
+  vertical-align: top;
+}
+/* line 376, ../sass/yw-project.scss */
+#news .news-item .news-item-con {
+  margin-right: 88px;
+}
+/* line 379, ../sass/yw-project.scss */
+#news .news-item .news-item-con .news-title {
+  font-size: 20px;
+}
+/* line 383, ../sass/yw-project.scss */
+#news .news-item .news-item-con .news-tag {
+  margin-top: 7px;
+  color: #81898c;
+  font-size: 12px;
+}
+/* line 387, ../sass/yw-project.scss */
+#news .news-item .news-item-con .news-tag .news-sort {
+  display: inline-block;
+  line-height: 16px;
+  padding: 0 2px;
+  font-size: 11px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+/* line 396, ../sass/yw-project.scss */
+#news .news-item .news-item-con .news-content {
+  margin: 20px 0 15px;
+}
+/* line 400, ../sass/yw-project.scss */
+#news .news-item .news-item-con .news-item-more .news-more-a {
+  font-size: 13px;
+  color: #03a0e5;
+}
+
+/* line 408, ../sass/yw-project.scss */
+#contact {
+  background-color: #313743;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+/* line 413, ../sass/yw-project.scss */
+#contact .contact-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 50%;
+  left: 0;
+  background-color: #232a30;
+}
+/* line 421, ../sass/yw-project.scss */
+#contact .contact-detail {
+  width: 60%;
+  height: 500px;
+  float: left;
+  padding-top: 45px;
+  position: relative;
+  background-color: #232a30;
+}
+/* line 428, ../sass/yw-project.scss */
+#contact .contact-detail .contact-dl {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  float: left;
+  width: 268px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  font-size: 13px;
+}
+/* line 436, ../sass/yw-project.scss */
+#contact .contact-detail .contact-dl .contact-dt {
+  font-weight: 200;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  margin-bottom: 3px;
+}
+/* line 443, ../sass/yw-project.scss */
+#contact .contact-map {
+  height: 690px;
+  margin-left: 50%;
+  position: relative;
+}
+/* line 447, ../sass/yw-project.scss */
+#contact .contact-map .icon-local {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: 0 10px;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
+  background-color: #019ee3;
+  border: 4px solid;
+  border-radius: 50%;
+  vertical-align: -4px;
+  animation: localShine 2s linear infinite;
+}
+@keyframes localShine {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+}
+/* line 468, ../sass/yw-project.scss */
+#contact .contact-map .contact-map-bj {
+  top: 220px;
+  right: 200px;
+  position: absolute;
+}
+/* line 474, ../sass/yw-project.scss */
+#contact .contact-map .contact-map-sh {
+  top: 393px;
+  right: 60px;
+  position: absolute;
+}
+/* line 480, ../sass/yw-project.scss */
+#contact .contact-map .contact-map-hz {
+  top: 430px;
+  right: 136px;
+  position: absolute;
+}
+
+/* line 488, ../sass/yw-project.scss */
+#footer {
+  height: 50px;
+  padding: 23px 0;
+  line-height: 20px;
+  margin-top: -96px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #191e22;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+/* line 500, ../sass/yw-project.scss */
+#footer .footer-left {
+  float: left;
+  position: absolute;
+}
+/* line 503, ../sass/yw-project.scss */
+#footer .footer-left .copyright {
+  margin-bottom: 8px;
+  font-family: Helvetica;
+  font-size: 12px;
+  color: #fff;
+  line-height: 12px;
+}
+/* line 509, ../sass/yw-project.scss */
+#footer .footer-left .copyright span {
+  margin-left: 10px;
+}
+/* line 513, ../sass/yw-project.scss */
+#footer .footer-left .copyothers {
+  color: #d1d2d4;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  margin-bottom: 8px;
+}
+/* line 521, ../sass/yw-project.scss */
+#footer .footer-share {
+  margin-top: 2px;
+  white-space: nowrap;
+  word-spacing: 15px;
+  float: right;
+}
+/* line 526, ../sass/yw-project.scss */
+#footer .footer-share .icon-share {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-size: 44px 90px;
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  vertical-align: middle;
+}
+/* line 536, ../sass/yw-project.scss */
+#footer .footer-share .icon-share-weixin {
+  background-position: 0 -45px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* line 554, ../sass/yw-project.scss */
+.slide-fade-enter-active {
+  animation: fadeInUp .5s ease-in-out;
+}
+
+/* line 558, ../sass/yw-project.scss */
+.slide-fade-enter, .slide-fade-leave-active {
+  opacity: 0;
+}
+
+/* line 563, ../sass/yw-project.scss */
+.mobile-slide-enter-active {
+  transition: all 2s;
+}

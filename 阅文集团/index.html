@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>阅文集团</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="stylesheets/yw-project.css">
+    <link rel="stylesheet" href="animate.css">
+    <link href="https://unpkg.com/animate.css@3.5.1/animate.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container" >
+    <div id="nav-bar"   v-bind:class="[isactive ? 'nav-bar':'nav-bar-active']">
+        <div class="con-m  nav-hd-bar">
+            <a class="yw-logo">
+
+            </a>
+            <div class="nav-tags">
+                <a href="#operation">全版权运营</a>
+                <a href="#mobile">移动产品</a>
+                <a href="#brands" class="brandsLink">旗下品牌</a>
+                <a href="#news">新闻中心</a>
+                <a href="#contact">联系我们</a>
+            </div>
+            <a class="join-us-btn">加入我们</a>
+        </div>
+    </div>
+    <div id="header">
+        <div class="hd-slide">
+            <div class="hd-slide-x  clearfix">
+            <div class="hd-slide-1">
+                <div  class=" con-m hd-slide-wz">
+                    <h1 class="hd-slide-h">数字阅读与优质IP双核驱动</h1>
+                    <p class="hd-slide-p">中国引领行业的数字阅读平台</br><span>和文学IP培育平台</span></p>
+                </div>
+            </div>
+            <div class="hd-slide-2">
+                <div class="con-m hd-slide-wz">
+                    <h2 class="hd-slide-h">阅世界，阅无界</h2>
+                    <p class="hd-slide-p">阅读越明白自己</p>
+                    <a class="hd-slide-btn">QQ阅读</a>
+                </div>
+            </div>
+            <div class="hd-slide-3">
+                <div class="con-m hd-slide-wz">
+                    <h1 class="hd-slide-h">WE'RE HIRING!</h1>
+                    <p class="hd-slide-p">加入阅文，实现你的文学梦想</p>
+                    <a class="hd-slide-btn">加入我们</a>
+                </div>
+            </div>
+            <div class="void"></div>
+            </div>
+            <div class="con-m">
+                <div class="slide-dot" id="slide-dot">
+                    <span v-for="item in items">{{item}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="hd-resume">
+            <div class="hd-resume-con con-m" >
+                <div class="hd-resume-top">
+                    <div class="hd-resume-data hd-data-1">
+                        <p class="hd-resume-para clearfix">
+                            <i class="icon-pen "></i>
+                            <span>400万创作者</span>
+                        </p>
+                        <p class="hd-resume-para2">完善的作家孵化和培养体系，打造作家、读者、平台互生共荣的文化生态体系。</p>
+
+                    </div>
+                    <div class="hd-resume-data hd-data-2">
+                        <p class="hd-resume-para">
+                            <i class="icon-book"></i>
+                            <span>1000万作品</span>
+                        </p>
+                        <p class="hd-resume-para2">原创小说已覆盖行业 90% 以上，覆盖200多种内容品类。</p>
+                    </div>
+                    <div class="hd-resume-data hd-data-3">
+                        <p class="hd-resume-para">
+                            <i  class="icon-user"></i>
+                            <span>6亿用户</span>
+                        </p>
+                        <p class="hd-resume-para2">以 QQ 阅读为中心，包罗网络原创、传统出版、音频听书等品牌功能的完整产品矩阵。</p>
+                    </div>
+
+                </div>
+               <p class="hd-resume-bto">阅文集团由腾讯文学与原盛大文学整合而成，作为引领行业的正版数字阅读平台和文学 IP 培育平台，阅文旗下囊括 QQ 阅读、起点中文网等业界知名品牌，拥有 1000 万部作品储备、400 万名创作者，覆盖 200 多种内容品类，占据国内IP改编市场优势份额，成功输出《步步惊心》《鬼吹灯》《盗墓笔记》《琅琊榜》《择天记》等大量优秀改编作品。</p>
+            </div>
+        </div>
+    </div>
+    <div id="operation">
+        <h3 class="yw-opera-h3">全版权运营</h3>
+        <div class="yw-opera-pics">
+
+                <ul class="yw-pics-ul" id="yw-pics-ul">
+                    <component v-for="item in srcs" v-bind:src="item"  ></component>
+                </ul>
+        </div>
+    </div>
+    <div id="mobile">
+        <div class="con-m">
+            <div class="mobile-tab">
+                <p>
+                <a class="mobile-tab-a"  v-on:click="renew(1)"  >QQ阅读</a>
+                <a class="mobile-tab-a" v-on:click="renew(2)">起点读书</a>
+                <a  class="mobile-tab-a" v-on:click="renew(3)">作家助手</a>
+                <span></span>
+                </p>
+                <i  class="yw-tab-hline" ></i>
+            </div>
+            <div class="mobile-imgs">
+
+                    <div class="mobile-imags-imgx">
+
+                        <img class="mobile-imags-img"  :key="src" alt="mobile" :src="src">
+
+                    </div>
+                    <div class="mobile-imgs-dec">
+                        <transition-group name="mobile-slide" tag="div">
+                        <h3 class="mobile-dec-h3" :key="title">{{title}}</h3>
+                        <p class="mobile-dec-p" :key="text">{{text}}</p>
+                            <p :key="href"><a class="mobile-dec-btn" :href="href" :key="href" title="查看助手详情">查看详情></a></p>
+                        </transition-group>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="brands" >
+        <div class="con-m">
+            <h3 class="yw-brand-h3">旗下品牌</h3>
+            <div class="brand-dec" >
+                <transition-group name="slide-fade" tag="div">
+                <i class="brand-dec-i brand " :key="this.class" :class="this.class"  ></i>
+                <p class="brand-dec-p" :key="description[this.class]">{{description[this.class]}}</p>
+                </transition-group>
+
+            </div>
+            <div class="brand-nav">
+                <p>
+                <a class="brand-nav-a" v-for="attr in attrs" :title="attr.href" :href="attr.href" v-on:mouseenter="toggle()"><i class="brand-nav-i brand" :class="attr.class" ></i>&nbsp;</a><span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="news">
+        <div class="con-m">
+            <h3 class="news-h">新闻中心</h3>
+            <div class="news-x">
+                <div class="news-item" v-for="item in items">
+                    <div class="news-item-con">
+                        <h5 class="news-title"><a>{{item.title}}</a></h5>
+                        <div class="news-tag">
+                            <span class="news-sort">{{item.sort}}</span>
+                            <time>{{item.time}}</time>
+                        </div>
+                        <p class="news-content">{{item.content}}</p>
+                        <p class="news-more">
+                            <a class="news-more-a" :href="item.href">阅读更多></a>
+                        </p>
+                    </div>
+                </div>
+                <a class="news-more-btn">查看更多></a>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="contact-bg"></div>
+        <div class="con-m">
+            <div class="contact-detail">
+                <dl class="contact-dl" v-for="item in contactItems" >
+                    <dt class="contact-dt">{{item.task}}</dt>
+                    <dt class="contact-dt">{{item.person}}</dt>
+                    <dt class="contact-dt">QQ: {{item.QQ}}</dt>
+                    <dt class="contact-dt">邮箱: {{item.Email}}</dt>
+                </dl>
+                <dl class="contact-dl">
+                    <dt class="contact-dt">来访时间</dt>
+                    <dt class="contact-dt">请于周一至周五9:00-18:00来访</dt>
+                </dl>
+
+            </div>
+
+            <div class="contact-map">
+                <span class="contact-map-bj"><i class="icon-local animated "></i>北京</span>
+                <span class="contact-map-sh"><i class="icon-local"></i>上海</span>
+                <span class="contact-map-hz"><i class="icon-local"></i>杭州</span>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="con-m">
+            <div class="footer-left">
+                <p class="copyright">@ {{this.year}} 上海玄霆娱乐信息科技有限公司<span>版权所有</span></p>
+                <p class="copyothers">增值电信业务经营许可证:沪B2-20080046-23</p>
+                <p class="copyothers">举报电话：13785633681 | 010-59357051</p>
+            </div>
+            <div class="footer-share">
+                <a class="icon-share icon-share-weixin" href="https://qidian.gtimg.com/yuewen/v1/css/images/yw-qrcode.png"></a>
+                <a class="icon-share icon-share-weibo" href="http://weibo.com/tengxunwenxue"></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/vue.js"></script>
+<script  type="text/javascript" src="js/yw.js"></script>
+</body>
+</html>
