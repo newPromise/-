@@ -98,10 +98,6 @@ function addDay(){
                 Otr.innerHTML = i;
                 i++;
             }
-            ///
-
-
-
     }
 }
 
@@ -164,13 +160,6 @@ function toggle(){//给每一天都添加特定的类名
 
     }
 }
-
-
-
-
-
-
-
 addDay();
 addWeekday();
 addbodyEle();

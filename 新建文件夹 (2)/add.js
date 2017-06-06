@@ -36,7 +36,7 @@ if(sessionStorage.getItem("editJuge")=="true") {
 
     //alert(order);
     bText=sessionStorage.getItem("bText");
-    sessionStorage.setItem("editJuge",false);
+    
 }
 
 function addRadio(){
@@ -258,3 +258,4 @@ document.addEventListener("click",function(event){//这里我们用了事件委�
                 sessionStorage.setItem("bText", bText);
             }
     }})
+

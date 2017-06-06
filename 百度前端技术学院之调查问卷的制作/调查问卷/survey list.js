@@ -37,7 +37,6 @@ for (let i = 0; i < Number(number) + 1; i++) {
             }
         }
     }
-
     if (sessionStorage.getItem("state" + i) == "false") {
         if (bJudge) {
             oTr.getElementsByTagName("td")[2].innerHTML = "<span>已发布</span>";
