@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Pingfang SC', 'Lantinghei SC', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-print-color-adjust: exact;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    background-color: #22C3AA;
+    padding: 40px;
+    height: 2950px;
+}
+.personImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-top: 20px;
+
+
+}
+.pp-person{
+    text-align: center;
+}
+.title{
+    margin: 40px;
+    text-shadow: 1px 2px #22c3aa, 2px 4px #aee2d9;
+    text-align: center;
+    color: white;
+}
+.pp-person p{
+    position: relative;
+    margin: 20px 0;
+}
+.pp-person p span{
+    display: inline-block;
+
+}
+.personImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+.detail{
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.detail ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
+.detail-right,.detail-left{
+    width: 48%;
+
+}
+.detail-left{
+    float: left;
+}
+.detail-left li{
+    text-align: right;
+
+}
+.detail-right{
+    float: right;
+}
+.detail-right li{
+    text-align: left;
+}
+.skill-detail{
+    text-align: center;
+}
+.skill-detail span{
+    background-color: #096254;
+    color: #aee2d9;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px 8px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+}
+.dec-p{
+
+    margin: auto;
+}
+.skill-describe p{
+    color: #FFFFFF;
+    text-align: center;
+}
+.con-style{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.con-style li{
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+.con-left,.con-right{
+    width: 50%;
+    list-style: none;
+}
+.con-left{
+    float: left;
+}
+.con-left li {
+    text-align: right;
+    margin: 10px;
+    border-right: 2px solid white;
+    padding-right: 20px;
+}
+.con-left li:hover{
+    color: yellow;
+}
+
+.con-right{
+    float: right;
+}
+.con-right li{
+    margin: 10px;
+}
+.pp-project span{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+
+}
+.pp-project p{
+    margin: 20px 0;
+}
+.pp-project a:hover{
+    color:rgba(89,198,72,0.97);
+
+}
+.pp-project .project-detail{
+    border-top: 2px dashed #aee2d9;
+    padding-top: 30px;
+}
+
+
