@@ -8,6 +8,8 @@
 <p>集美大学轮机工程学院2017届本科毕业生，现在掌握的技能如下：</br>html+css+javascript,实现使用CSS实现常见布局，掌握对于js的基本DOM操作，响应式布局，ajax,sessionStorage,理解js中的原型，闭包，作用域，原型链等概念, 库或框架：jQuery bootstrap 对于vue.js具有一定的使用能力，使用vue完成了阅文集团的官方首页。工具：git版本控制，css编译工具scss</p>
 <h2>我的博客</h2>
 <a href="http://www.cnblogs.com/qianduangaoshou/">我的博客</a>
+<h2>我的简历</h2>
+<a href="https://cdn.rawgit.com/qianduangaoshou/-/65a38a65/resume/index.html">我的简历</a>
 <h2>我的作品</h2>
 <p><a href="https://cdn.rawgit.com/qianduangaoshou/-/12821341/%E6%85%95%E8%AF%BE%E7%BD%91%E9%A6%96%E9%A1%B5/%E6%85%95%E8%AF%BE%E7%BD%91page.html">慕课网首页</a></p>
 <p><a href="https://cdn.rawgit.com/qianduangaoshou/-/ca86c5bb/it%E4%BF%AE%E7%9C%9F%E9%99%A2%E9%A6%96%E9%A1%B5%E7%BC%96%E5%86%99/IT%E4%BF%AE%E7%9C%9F%E9%99%A2%E9%A6%96%E9%A1%B5.html
