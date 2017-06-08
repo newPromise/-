@@ -648,6 +648,7 @@ body {
   transition: opacity .25s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
+  margin-left:20px;
 }
 
 /* line 334, ../sass/yw-project.scss */
