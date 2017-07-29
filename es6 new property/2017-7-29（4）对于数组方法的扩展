@@ -1,0 +1,64 @@
+### 对于数组方法的几个新的API
+#### 展开运算符
+1.展开运算符用在数组中实现数组的合并，数组的展开的操作
+2.实现将类数组对象转化为数组，比如 nodeList ClassList
+#### Array.from
+使用Array.from 也可以实现将类数组对象转化为数组，但是与展开运算符不同的是，Array.from 可以将带有 length属性的对象转化为数组：
+```
+let obj = {
+  name: 'zhangning',
+  age: 22,
+  length: 2
+}
+let Arr = Array.from(obj)
+// ['zhangning',22]
+```
+#### Array.of
+使用Array.of 用来构建数组，传入的参数被视为数组中的值：
+>我们在平常使用的时候使用 Array()的方法的时候是可以构建数组的，但是当我们传入一个参数的时候，这被视为数组的长度而不是数组中的值
+>
+使用 Array.of ()方法传入的参数始终被视为数组中的值：
+
+```
+let arr = Array.of (2);
+// [2]
+```
+
+替代方法：
+```
+function ArrayOf(){
+  return [].slice.call(arguments);
+}
+```
+#### Array.copyWithin() 方法：
+使用这个方法用于在数组内部将指定的位置成员复制到其他位置
+
+Array.copyWithin(target.start,end) 
+> target:从该位置来替换数据
+>  
+>start 从该位置开始复制 （可选）
+>  
+>end 在给位置停止复制
+>  
+
+#### Array.find()  Array.findIndex() 方法
+这个API用于给数组中的每一项运行给定函数，最终返回返回值为true的选项
+findIndex()同理：用于使用这个找到满足条件的选项的位置
+
+
+#### Array.fill(value,start,end)
+用于填充数组，
+> value用于填充数组的值，必填选项，使用这个值可以覆盖掉数组选项中的值
+>  
+>start (可选) 用于填充位置的开始位置
+>  
+>end （可选） 用于填充位置的结束位置
+>  
+使用这种方法可以用来实现数组的初始化：
+
+```
+let arr = [1,2,3,4,5];
+arr.fill('',2,4);
+//arr: [1,2,'','',5]
+```
+有一个想法，可不可以实现将要进行初始化的数据存在数组里面，然后点击取消的时候进行初始化设置呢？
